@@ -1,0 +1,36 @@
+@import '../../styles/mixins.scss';
+
+.container {
+    background: var(--pink100);
+    // background: var(--gray100);
+    width: 100%;
+    @include wrapper;
+
+    .content {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .contactTitle {
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+        .contactLinks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            svg {
+                fill: var(--gray700);
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover {
+                    transform: translateY(-3px);
+                }
+            }
+            & a:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+    }
+}

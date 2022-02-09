@@ -1,0 +1,28 @@
+@import '../styles/mixins.scss';
+
+.container {
+    height: calc(100vh - 221px);
+    background: linear-gradient(0deg, var(--white) 70%, var(--gray100) 100%);
+    @include wrapper;
+    padding: 1rem;
+
+    .inDevelopment {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+        &__image {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 100% !important;
+                height: 100% !important;
+                max-width: 450px !important;
+                max-height: auto !important;
+            }
+        }
+    }
+}
