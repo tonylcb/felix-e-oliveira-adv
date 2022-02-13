@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100% - 221px);
+    height: calc(100% - 220px);
     background: linear-gradient(0deg, var(--white) 70%, var(--gray100) 100%);
     @include wrapper;
 }
