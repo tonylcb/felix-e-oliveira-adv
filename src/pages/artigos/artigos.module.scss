@@ -1,0 +1,11 @@
+@import '../../styles/mixins.scss';
+
+.container {
+    @include wrapper;
+    height: calc(100% - 220px);
+}
+
+.content {
+    @include content;
+	padding: 40px 0;
+}

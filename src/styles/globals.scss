@@ -10,6 +10,7 @@
   --gray100: #f4f6fc;
   --gray200: #DFE0E6;
   --gray300: #a8a8b3;
+  --gray600: #616161;
   --gray700: #323238;
   --gray800: #29292e;
   --gray850: #1f2729;
@@ -32,11 +33,15 @@
 
 body, input, textarea, select, button {
   font: 300 1rem "Lato", sans-serif;
-  color: var(--gray700);
+  color: var(--gray600);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--gray700);
+  color: var(--gray600);
+}
+
+li {
+  list-style: none;
 }
 
 button {

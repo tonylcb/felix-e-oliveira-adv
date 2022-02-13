@@ -3,7 +3,6 @@
 .container {
     background: var(--pink100);
     // background: var(--gray100);
-    width: 100%;
     @include wrapper;
 
     .content {
@@ -21,7 +20,7 @@
             flex-wrap: wrap;
             justify-content: center;
             svg {
-                fill: var(--gray700);
+                fill: var(--gray600);
                 cursor: pointer;
                 transition: 0.3s;
                 &:hover {

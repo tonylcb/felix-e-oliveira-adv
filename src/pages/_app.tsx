@@ -6,11 +6,13 @@ import "../styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Div100vh>
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
-    </Div100vh>
+    <>
+      <Div100vh>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </Div100vh>
+    </>
   );
 }
 

@@ -1,21 +1,77 @@
 @import '../../styles/mixins.scss';
 
 .container {
-    width: 100%;
     height: auto;
     border-bottom: 1px solid var(--gray200);
     @include wrapper;
+    overflow: hidden;
 }
 
 .content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100px;
+
+    @include content;
+
+    .menuDesktop {
+        &__list {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    .menuMobile {
+        position: relative;
+
+        &__buttonMenu {
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            
+            &__text {
+                margin-right: 8px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+
+        &__container {
+            position: fixed;
+            opacity: 0;
+            z-index: -1;
+            right: 0px;
+            top: 101px;
+            transform: translateX(200px);
+            transition: 0.3s;
+            background: rgba(255,255,255,0.6);
+            backdrop-filter: blur(4px);
+            border-bottom: 1px solid var(--gray200);
+            border-left: 1px solid var(--gray200);
+            border-bottom-left-radius: 20px
+        }
+
+        &__list {
+            min-width: 160px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 1rem;
+            padding-bottom: 2rem;
+        }
+        &__listOpened {
+            transform: translateX(0px);
+            opacity: 1;
+            z-index: 100;
+        }
+    }
 }
 
 .logo {
-    cursor: pointer;
-    font-size: var(--bigger);
-    font-weight: 400;
+    &__content {
+        cursor: pointer;
+        margin-right: 15px;    
+    }
 }
