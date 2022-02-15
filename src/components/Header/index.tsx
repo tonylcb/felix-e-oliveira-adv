@@ -5,16 +5,34 @@ import React from "react";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { MenuList } from "./menu-list";
 import { HamburgerMenu } from "./hamburger-menu";
+import { useRouter } from "next/router";
 
 export function Header() {
   const isTablet = useMediaQuery("(max-width: 1024px)");
   const [openMobileMenu, setOpenMobileMenu] = React.useState(false);
-
+  const containerMenu = React.useRef();
   const hamburgerMenu = HamburgerMenu(openMobileMenu);
+  const router = useRouter();
 
   function handleOpenMobileMenu() {
     setOpenMobileMenu(!openMobileMenu);
   }
+
+  function handleCloseOutsideMenu({ target }) {
+    if (
+      containerMenu.current &&
+      openMobileMenu &&
+      target === containerMenu.current
+    ) {
+      setOpenMobileMenu(false);
+    }
+  }
+
+  React.useEffect(() => {
+    router.events.on("routeChangeStart", () => {
+      setOpenMobileMenu(false);
+    });
+  }, [router]);
 
   return (
     <header className={styles.container}>
@@ -56,6 +74,8 @@ export function Header() {
               className={`${openMobileMenu && styles.menuMobile__listOpened} ${
                 styles.menuMobile__container
               }`}
+              ref={containerMenu}
+              onClick={handleCloseOutsideMenu}
             >
               <ul className={styles.menuMobile__list}>
                 <MenuList />

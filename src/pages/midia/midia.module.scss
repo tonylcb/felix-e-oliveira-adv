@@ -2,7 +2,8 @@
 
 .container {
     @include wrapper;
-    height: calc(100% - 220px);
+    height: calc(100% - 120px);
+	padding-top: 100px;
 }
 
 .content {

@@ -1,10 +1,11 @@
 @import '../styles/mixins.scss';
 
 .container {
-    height: calc(100vh - 221px);
+    height: calc(100% - 120px);
     background: linear-gradient(0deg, var(--white) 70%, var(--gray100) 100%);
     @include wrapper;
     padding: 1rem;
+	padding-top: 100px;
 
     .inDevelopment {
         &__container {
@@ -22,6 +23,22 @@
                 height: 100% !important;
                 max-width: 450px !important;
                 max-height: auto !important;
+            }
+        }
+    }
+
+    @include tablet {
+        .inDevelopment {
+            &__title {
+                margin-bottom: 10px;
+            }
+            &__container {
+                justify-content: center;
+            }
+            &__image {
+                img {
+                    max-width: 380px !important;
+                }
             }
         }
     }

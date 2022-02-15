@@ -1,7 +1,15 @@
 import styles from "./menu-list.module.scss";
 import Link from "next/link";
+import { useLoginModal } from "../../context/context_login-modal";
 
 export function MenuList() {
+  // @ts-expect-error
+  const { setloginModal } = useLoginModal();
+
+  function handleOpenLoginModal() {
+    setloginModal(true);
+  }
+
   return (
     <>
       <li className={styles.menuItem}>
@@ -14,7 +22,7 @@ export function MenuList() {
           Artigos
         </Link>
       </li>
-      <li className={styles.menuItem}>
+      <li className={styles.menuItem} onClick={handleOpenLoginModal}>
         <a>Área do cliente</a>
       </li>
       <li className={styles.menuItem}>
