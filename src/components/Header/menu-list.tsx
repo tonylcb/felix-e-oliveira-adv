@@ -1,13 +1,16 @@
 import styles from "./menu-list.module.scss";
 import Link from "next/link";
 import { useLoginModal } from "../../context/context_login-modal";
-
+import { useMenuMobile } from "../../context/context_menu-mobile";
 export function MenuList() {
   // @ts-expect-error
-  const { setloginModal } = useLoginModal();
+  const { setLoginModal } = useLoginModal();
+  // @ts-expect-error
+  const { setMenuMobile } = useMenuMobile();
 
   function handleOpenLoginModal() {
-    setloginModal(true);
+    setLoginModal(true);
+    setMenuMobile(false);
   }
 
   return (

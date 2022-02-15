@@ -6,31 +6,33 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import { MenuList } from "./menu-list";
 import { HamburgerMenu } from "./hamburger-menu";
 import { useRouter } from "next/router";
+import { useMenuMobile } from "../../context/context_menu-mobile";
 
 export function Header() {
   const isTablet = useMediaQuery("(max-width: 1024px)");
-  const [openMobileMenu, setOpenMobileMenu] = React.useState(false);
+  // @ts-expect-error
+  const { menuMobile, setMenuMobile } = useMenuMobile();
   const containerMenu = React.useRef();
-  const hamburgerMenu = HamburgerMenu(openMobileMenu);
+  const hamburgerMenu = HamburgerMenu(menuMobile);
   const router = useRouter();
 
-  function handleOpenMobileMenu() {
-    setOpenMobileMenu(!openMobileMenu);
+  function handlemenuMobile() {
+    setMenuMobile(!menuMobile);
   }
 
   function handleCloseOutsideMenu({ target }) {
     if (
       containerMenu.current &&
-      openMobileMenu &&
+      menuMobile &&
       target === containerMenu.current
     ) {
-      setOpenMobileMenu(false);
+      setMenuMobile(false);
     }
   }
 
   React.useEffect(() => {
     router.events.on("routeChangeStart", () => {
-      setOpenMobileMenu(false);
+      setMenuMobile(false);
     });
   }, [router]);
 
@@ -59,19 +61,19 @@ export function Header() {
           </div>
         ) : (
           <div
-            className={`${openMobileMenu && styles.menuMobileOpened} ${
+            className={`${menuMobile && styles.menuMobileOpened} ${
               styles.menuMobile
             }`}
           >
             <button
               className={styles.menuMobile__buttonMenu}
-              onClick={handleOpenMobileMenu}
+              onClick={handlemenuMobile}
             >
               <span className={styles.menuMobile__buttonMenu__text}>Menu</span>
               {hamburgerMenu}
             </button>
             <div
-              className={`${openMobileMenu && styles.menuMobile__listOpened} ${
+              className={`${menuMobile && styles.menuMobile__listOpened} ${
                 styles.menuMobile__container
               }`}
               ref={containerMenu}

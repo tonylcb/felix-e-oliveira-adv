@@ -1,16 +1,35 @@
 import React from "react";
 import styles from "./login-modal.module.scss";
 import { useLoginModal } from "../../context/context_login-modal";
+import CloseButton from "../CloseButton";
 
 export default function Login() {
   // @ts-expect-error
-  const { loginModal } = useLoginModal();
+  const { loginModal, setLoginModal } = useLoginModal();
+  const outsideModal = React.useRef();
+
+  function handleCloseOutsideModal({ target }) {
+    if (outsideModal.current && loginModal && target === outsideModal.current) {
+      setLoginModal(false);
+    }
+  }
 
   return (
     <>
       {loginModal ? (
-        <div className={styles.container}>
+        <div
+          className={styles.container}
+          ref={outsideModal}
+          onClick={handleCloseOutsideModal}
+        >
           <div className={styles.content}>
+            <div
+              onClick={() => {
+                setLoginModal(false);
+              }}
+            >
+              <CloseButton />
+            </div>
             <h3 className={styles.mainTitle}>
               {" "}
               Acesse sua conta para acompanhar o seu processo
