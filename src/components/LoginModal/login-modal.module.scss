@@ -11,7 +11,7 @@
     left: 0;
     @include wrapper;
     height: 100vh;
-    z-index: 300;
+    z-index: 999;
     transition: 0.3s;
 }
 
