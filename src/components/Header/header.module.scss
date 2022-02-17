@@ -7,7 +7,7 @@
     @include wrapper;
     background: rgba(244, 246, 252,0.7);
     backdrop-filter: blur(3px);
-    box-shadow: 0px 1px 5px 1px var(--gray200);
+    box-shadow: 0px 2px 5px 1px var(--gray200);
     z-index: 998;
 }
 
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 85px;
     overflow: hidden;
     @include content;
 
@@ -93,11 +93,5 @@
     &__content {
         cursor: pointer;
         margin-right: 15px;    
-    }
-}
-
-@include mobile {
-    .content {
-        height: 85px;
     }
 }

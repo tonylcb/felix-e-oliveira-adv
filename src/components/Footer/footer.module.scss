@@ -2,6 +2,7 @@
 
 .container {
     background: var(--pink100);
+    @include wrapper;
 
     .content {
         min-height: 180px;
@@ -9,9 +10,9 @@
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: space-between;
-        @include wrapper;
         @include content;
-        padding: 50px 1rem;
+        padding-top: 50px;
+        padding-bottom: 50px;
         .footer {
             &__logo {
                 align-self: center;
@@ -35,7 +36,7 @@
                 justify-content: flex-start;
                 height: 100%;
                 width: 100%;
-                max-width: 265px;
+                max-width: 210px;
                 margin-right: 20px;
 
                 &LinkList {
@@ -58,7 +59,37 @@
                     }
                 }
             }
+
             &__contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                max-width: 240px;
+                margin-right: 20px;
+
+                &Title {
+                    align-self: center;
+                }
+
+                &Items {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                &Item {
+                    transition: 0.3s;
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                    &:hover {
+                        opacity: 0.5;
+                        color: var(--gray700);
+                    }
+                }
+
+            }
+
+            &__network {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -92,30 +123,39 @@
             }
         }
     }
-    .copyright {
-        border-top: 1px solid var(--gray100);
-        background: var(--pink300);
-        @include wrapper;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 40px;
-    }
-    @include mobile {
+}
+.copyright {
+    border-top: 1px solid var(--gray100);
+    background: var(--pink300);
+    @include wrapper;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+@include mobile {
+    .container {
         .content {
             flex-direction: column;
             align-items: center;
+        padding-bottom: 30px;
             .footer {
                 &__logo {
                     margin-right: 0px;
                     margin-bottom: 20px;
                 }
-
+    
                 &__institutional {
+                    margin-right: 0px;
+                    margin-bottom: 20px;
+                }
+    
+                &__contact {
                     margin-right: 0px;
                     margin-bottom: 20px;
                 }
             }
         }
+
     }
 }
