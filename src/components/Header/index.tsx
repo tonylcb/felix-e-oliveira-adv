@@ -37,55 +37,61 @@ export function Header() {
   }, [router]);
 
   return (
-    <header className={styles.container}>
-      <div className={styles.content}>
-        <div className={styles.logo__content}>
-          <Link href="/" passHref>
-            <Image
-              src="/logo3.png"
-              className={styles.logo__img}
-              alt="logo"
-              width="256"
-              height="62"
-            />
-          </Link>
-        </div>
+    <>
+      <header className={styles.container}>
+        <div className={styles.content}>
+          <div className={styles.logo__content}>
+            <Link href="/" passHref>
+              <Image
+                src="/logo3.png"
+                className={styles.logo__img}
+                alt="logo"
+                width="256"
+                height="62"
+              />
+            </Link>
+          </div>
 
-        {!isTablet ? (
-          <div className={styles.menuDesktop}>
-            <nav className={styles.menuDesktop__nav}>
-              <ul className={styles.menuDesktop__list}>
-                <MenuList />
-              </ul>
-            </nav>
-          </div>
-        ) : (
-          <div
-            className={`${menuMobile && styles.menuMobileOpened} ${
-              styles.menuMobile
-            }`}
-          >
-            <button
-              className={styles.menuMobile__buttonMenu}
-              onClick={handlemenuMobile}
-            >
-              <span className={styles.menuMobile__buttonMenu__text}>Menu</span>
-              {hamburgerMenu}
-            </button>
-            <div
-              className={`${menuMobile && styles.menuMobile__listOpened} ${
-                styles.menuMobile__container
-              }`}
-              ref={containerMenu}
-              onClick={handleCloseOutsideMenu}
-            >
-              <ul className={styles.menuMobile__list}>
-                <MenuList />
-              </ul>
+          {!isTablet ? (
+            <div className={styles.menuDesktop}>
+              <nav className={styles.menuDesktop__nav}>
+                <ul className={styles.menuDesktop__list}>
+                  <MenuList />
+                </ul>
+              </nav>
             </div>
-          </div>
-        )}
-      </div>
-    </header>
+          ) : (
+            <div
+              className={`${menuMobile && styles.menuMobileOpened} ${
+                styles.menuMobile
+              }`}
+            >
+              <button
+                className={styles.menuMobile__buttonMenu}
+                onClick={handlemenuMobile}
+              >
+                <span className={styles.menuMobile__buttonMenu__text}>
+                  Menu
+                </span>
+                {hamburgerMenu}
+              </button>
+            </div>
+          )}
+        </div>
+      </header>
+      {isTablet ? (
+        <div
+          className={`${menuMobile && styles.menuMobile__listOpened} ${
+            styles.menuMobile__container
+          }`}
+          ref={containerMenu}
+          onClick={handleCloseOutsideMenu}
+        >
+          <ul className={styles.menuMobile__list}>
+            <MenuList />
+          </ul>
+        </div>
+      ) : null}
+    </>
   );
 }

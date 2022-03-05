@@ -1,6 +1,7 @@
 import styles from "../styles/home.module.scss";
 import React from "react";
 import Image from "next/image";
+import SEO from "../components/SEO";
 // import { useRouter } from "next/router";
 
 export default function Home() {
@@ -13,18 +14,21 @@ export default function Home() {
   // }, []);
 
   return (
-    <main className={styles.container}>
-      <section className={styles.inDevelopment__container}>
-        <h1 className={styles.inDevelopment__title}>Em construção...</h1>
-        <div className={styles.inDevelopment__image}>
-          <Image
-            src="/site-em-construção.png"
-            alt="Site em construção"
-            width={504}
-            height={470}
-          />
-        </div>
-      </section>
-    </main>
+    <>
+      <SEO title="Félix & Oliveira Advogados" excludeTitleSuffix />
+      <main className={styles.container}>
+        <section className={styles.inDevelopment__container}>
+          <h1 className={styles.inDevelopment__title}>Em construção...</h1>
+          <div className={styles.inDevelopment__image}>
+            <Image
+              src="/site-em-construção.png"
+              alt="Site em construção"
+              width={504}
+              height={470}
+            />
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
