@@ -1,3 +1,5 @@
+@import '../styles/mixins.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +22,7 @@
   --pink200: #E6CADB;
   --pink300:#F2D5E7;
   --pink400: #FA73C2;
+  --pink500: #A894A1;
   
   // font-size
   --bigger: 2.5rem;
@@ -51,4 +54,37 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul {
+  .slick-active {
+    background: var(--pink500) !important;
+  }
+}
+
+.slick-arrow {
+  z-index: 10;
+  fill: var(--pink100);
+  width: 40px;
+  height: 40px;
+  // border-radius: 100px;
+  // padding: 4px;
+}
+
+.slick-next {
+  right: 15px;
+}
+
+.slick-prev {
+  left: 15px;
+}
+
+@include mobile {
+.slick-next {
+  right: 0px;
+}
+
+.slick-prev {
+  left: 0px;
+}
 }
