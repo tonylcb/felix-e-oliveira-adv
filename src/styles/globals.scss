@@ -1,4 +1,4 @@
-@import '../styles/mixins.scss';
+@import "../styles/mixins.scss";
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@
   // color
   --white: #fff;
   --gray100: #f4f6fc;
-  --gray200: #DFE0E6;
+  --gray200: #dfe0e6;
   --gray300: #a8a8b3;
   --gray600: #616161;
   --gray700: #323238;
@@ -18,12 +18,12 @@
   --gray850: #1f2729;
   --gray900: #121214;
 
-  --pink100: #FCDEF1;
-  --pink200: #E6CADB;
-  --pink300:#F2D5E7;
-  --pink400: #FA73C2;
-  --pink500: #A894A1;
-  
+  --pink100: #fcdef1;
+  --pink200: #e6cadb;
+  --pink300: #f2d5e7;
+  --pink400: #fa73c2;
+  --pink500: #a894a1;
+
   // font-size
   --bigger: 2.5rem;
   --big: 2rem;
@@ -34,12 +34,21 @@
   --smaller: 0.75rem;
 }
 
-body, input, textarea, select, button {
+body,
+input,
+textarea,
+select,
+button {
   font: 300 1rem "Lato", sans-serif;
   color: var(--gray600);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--gray600);
 }
 
@@ -58,7 +67,7 @@ a {
 
 ul {
   .slick-active {
-    background: var(--pink500) !important;
+    background: var(--pink100) !important;
   }
 }
 
@@ -67,8 +76,6 @@ ul {
   fill: var(--pink100);
   width: 40px;
   height: 40px;
-  // border-radius: 100px;
-  // padding: 4px;
 }
 
 .slick-next {
@@ -80,11 +87,11 @@ ul {
 }
 
 @include mobile {
-.slick-next {
-  right: 0px;
-}
+  .slick-next {
+    right: 0px;
+  }
 
-.slick-prev {
-  left: 0px;
-}
+  .slick-prev {
+    left: 0px;
+  }
 }

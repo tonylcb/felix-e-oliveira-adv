@@ -25,7 +25,7 @@
       rgba(0, 0, 0, 0.4) 52%,
       rgba(244, 246, 252, 0) 100%
     );
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     padding-left: 35px;
     h1 {
       max-width: 70%;
@@ -49,7 +49,7 @@
       display: flex;
       justify-content: center;
       li {
-        background: var(--pink100);
+        background: var(--gray300);
         height: 12px;
         width: 12px;
         border-radius: 100px;
