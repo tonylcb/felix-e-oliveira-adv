@@ -1,20 +1,12 @@
 import Head from "next/head";
 
-interface SEOProps {
-  title: string;
-  description?: string;
-  excludeTitleSuffix?: boolean;
-  image?: string;
-  indexPage?: boolean;
-}
-
 export default function SEO({
   title,
   description,
   excludeTitleSuffix = false,
   image,
   indexPage = true,
-}: SEOProps) {
+}) {
   const pageTitle = `${title} ${
     !excludeTitleSuffix ? "| Félix & Oliveira Advogados" : ""
   }`;

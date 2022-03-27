@@ -1,6 +1,5 @@
 import { createContext, useContext, useState } from "react";
 
-// @ts-expect-error
 const AppContext = createContext();
 
 export function MenuMobileProvider({ children }) {

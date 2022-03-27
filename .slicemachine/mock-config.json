@@ -1,0 +1,26 @@
+{
+  "_cts": {
+    "home": {}
+  },
+  "slices": {
+    "FullBannerHome": {
+      "default": {
+        "primary": {},
+        "items": {
+          "title": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "description": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

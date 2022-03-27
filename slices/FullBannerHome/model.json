@@ -1,0 +1,66 @@
+{
+  "id": "full_banner_home",
+  "type": "SharedSlice",
+  "name": "FullBannerHome",
+  "description": "FullBannerHome",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "FullBannerHome",
+      "primary": {},
+      "items": {
+        "title": {
+          "config": {
+            "label": "Título",
+            "placeholder": "Título do anúncio",
+            "allowTargetBlank": false,
+            "single": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "description": {
+          "config": {
+            "label": "Descrição",
+            "placeholder": "Descrição do anúncio",
+            "allowTargetBlank": false,
+            "single": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "link": {
+          "config": {
+            "label": "Link",
+            "placeholder": "Link do anúncio",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "fullbannerdesktop": {
+          "config": {
+            "label": "Fullbanner Desktop",
+            "constraint": {
+              "width": 1920,
+              "height": 800
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "fullbannermobile": {
+          "config": {
+            "label": "Fullbanner Mobile",
+            "constraint": {
+              "width": 575,
+              "height": 500
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      }
+    }
+  ]
+}

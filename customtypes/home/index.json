@@ -1,0 +1,29 @@
+{
+  "id": "home",
+  "label": "Home",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {},
+    "FullBanner Slider": {
+      "uid": {
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "full_banner_home": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

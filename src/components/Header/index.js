@@ -10,9 +10,9 @@ import { useMenuMobile } from "../../context/context_menu-mobile";
 
 export function Header() {
   const isTablet = useMediaQuery("(max-width: 1024px)");
-  // @ts-expect-error
+
   const { menuMobile, setMenuMobile } = useMenuMobile();
-  const containerMenu = React.useRef();
+  const containerMenu = React.createRef();
   const hamburgerMenu = HamburgerMenu(menuMobile);
   const router = useRouter();
 

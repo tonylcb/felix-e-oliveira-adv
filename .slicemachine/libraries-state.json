@@ -1,0 +1,208 @@
+{
+  "slices": {
+    "components": {
+      "full_banner_home": {
+        "library": "slices",
+        "id": "full_banner_home",
+        "name": "FullBannerHome",
+        "description": "FullBannerHome",
+        "model": {
+          "id": "full_banner_home",
+          "type": "SharedSlice",
+          "name": "FullBannerHome",
+          "description": "FullBannerHome",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "FullBannerHome",
+              "primary": {},
+              "items": {
+                "title": {
+                  "config": {
+                    "label": "Título",
+                    "placeholder": "Título do anúncio",
+                    "allowTargetBlank": false,
+                    "single": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "description": {
+                  "config": {
+                    "label": "Descrição",
+                    "placeholder": "Descrição do anúncio",
+                    "allowTargetBlank": false,
+                    "single": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "link": {
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "Link do anúncio",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                },
+                "fullbannerdesktop": {
+                  "config": {
+                    "label": "Fullbanner Desktop",
+                    "constraint": {
+                      "width": 1920,
+                      "height": 800
+                    },
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                },
+                "fullbannermobile": {
+                  "config": {
+                    "label": "Fullbanner Mobile",
+                    "constraint": {
+                      "width": 575,
+                      "height": 500
+                    },
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              }
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "full_banner_home",
+            "items": [
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Sit eiusmod id eu.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "heading1",
+                    "text": "Strategize rich channels",
+                    "spans": []
+                  }
+                ],
+                "link": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                },
+                "fullbannerdesktop": {
+                  "dimensions": {
+                    "width": 1920,
+                    "height": 800
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=1920&h=800&fit=crop"
+                },
+                "fullbannermobile": {
+                  "dimensions": {
+                    "width": 575,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=575&h=500&fit=crop"
+                }
+              },
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Nisi ullamco pariatur sit aliquip esse consectetur esse aliqua officia culpa amet anim consectetur mollit ullamco. Eiusmod cillum non commodo id fugiat dolor nostrud amet.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "heading1",
+                    "text": "Integrate impactful e-markets",
+                    "spans": []
+                  }
+                ],
+                "link": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                },
+                "fullbannerdesktop": {
+                  "dimensions": {
+                    "width": 1920,
+                    "height": 800
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=1920&h=800&fit=crop"
+                },
+                "fullbannermobile": {
+                  "dimensions": {
+                    "width": 575,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=575&h=500&fit=crop"
+                }
+              },
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Quis laboris veniam exercitation.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "heading1",
+                    "text": "Empower vertical paradigms",
+                    "spans": []
+                  }
+                ],
+                "link": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                },
+                "fullbannerdesktop": {
+                  "dimensions": {
+                    "width": 1920,
+                    "height": 800
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=1920&h=800&fit=crop"
+                },
+                "fullbannermobile": {
+                  "dimensions": {
+                    "width": 575,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=575&h=500&fit=crop"
+                }
+              }
+            ],
+            "primary": {}
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      }
+    }
+  }
+}

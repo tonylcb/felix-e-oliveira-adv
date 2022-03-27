@@ -9,7 +9,6 @@ import Link from "next/link";
 import { useLoginModal } from "../../context/context_login-modal";
 
 export function Footer() {
-  // @ts-expect-error
   const { loginModal, setLoginModal } = useLoginModal();
 
   function handleLoginModal() {

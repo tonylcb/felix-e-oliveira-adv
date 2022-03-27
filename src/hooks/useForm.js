@@ -27,7 +27,6 @@ const useForm = (type) => {
   }
 
   function onChange({ target }) {
-    // @ts-expect-error
     if (err) validate(target.value);
     setValue(target.value);
   }
@@ -37,9 +36,9 @@ const useForm = (type) => {
     setValue,
     onChange,
     err,
-    // @ts-expect-error
+
     validate: () => validate(value),
-    // @ts-expect-error
+
     onBlur: () => validate(value),
   };
 };

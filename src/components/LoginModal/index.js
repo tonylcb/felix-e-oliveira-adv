@@ -4,9 +4,8 @@ import { useLoginModal } from "../../context/context_login-modal";
 import CloseButton from "../CloseButton";
 
 export default function Login() {
-  // @ts-expect-error
   const { loginModal, setLoginModal } = useLoginModal();
-  const outsideModal = React.useRef();
+  const outsideModal = React.createRef();
 
   function handleCloseOutsideModal({ target }) {
     if (outsideModal.current && loginModal && target === outsideModal.current) {

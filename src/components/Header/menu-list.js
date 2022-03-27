@@ -3,9 +3,8 @@ import Link from "next/link";
 import { useLoginModal } from "../../context/context_login-modal";
 import { useMenuMobile } from "../../context/context_menu-mobile";
 export function MenuList() {
-  // @ts-expect-error
   const { setLoginModal } = useLoginModal();
-  // @ts-expect-error
+
   const { setMenuMobile } = useMenuMobile();
 
   function handleOpenLoginModal() {
