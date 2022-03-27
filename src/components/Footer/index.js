@@ -3,7 +3,6 @@ import styles from "./footer.module.scss";
 import InstagramSvg from "../../../public/instagram1.svg";
 import FacebookSvg from "../../../public/facebook1.svg";
 import WhatsappSvg from "../../../public/whatsapp1.svg";
-import EmailSvg from "../../../public/email2.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { useLoginModal } from "../../context/context_login-modal";
@@ -136,17 +135,12 @@ export function Footer() {
                   <WhatsappSvg />
                 </a>
               </li>
-              {/* <li>
-              <a href="mailto:contato@felixoliveiraadvogados.com">
-                <EmailSvg />
-              </a>
-            </li> */}
             </ul>
           </div>
         </div>
       </section>
       <section className={styles.copyright}>
-        Todos os direitos reservados.
+        <p>Todos os direitos reservados.</p>
       </section>
     </footer>
   );

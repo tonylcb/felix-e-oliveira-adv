@@ -2,7 +2,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import Div100vh from "react-div-100vh";
 import { LoginModalProvider } from "../context/context_login-modal";
 import LoginModal from "../components/LoginModal/index";
 import "../styles/globals.scss";
@@ -22,18 +21,16 @@ function MyApp({ Component, pageProps }) {
         </Link>
       )}
     >
-      <Div100vh>
-        <LoginModalProvider>
-          <MenuMobileProvider>
-            <Header />
-            <PrismicPreview repositoryName={repositoryName}>
-              <Component {...pageProps} />
-            </PrismicPreview>
-            <LoginModal />
-          </MenuMobileProvider>
-          <Footer />
-        </LoginModalProvider>
-      </Div100vh>
+      <LoginModalProvider>
+        <MenuMobileProvider>
+          <Header />
+          <PrismicPreview repositoryName={repositoryName}>
+            <Component {...pageProps} />
+          </PrismicPreview>
+          <LoginModal />
+        </MenuMobileProvider>
+        <Footer />
+      </LoginModalProvider>
     </PrismicProvider>
   );
 }

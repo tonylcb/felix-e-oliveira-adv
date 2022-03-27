@@ -1,12 +1,12 @@
-@import '../../styles/mixins.scss';
+@import "../../styles/mixins.scss";
 
 .container {
-    @include wrapper;
-    height: calc(100% - 120px);
-	padding-top: 100px;
+  @include wrapper;
+  height: calc(100% - 120px);
+  padding-top: 100px;
 }
 
 .content {
-    @include content;
-	padding: 40px 0;
+  @include wrapper;
+  padding: 40px 0;
 }

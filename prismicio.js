@@ -11,8 +11,6 @@ export function linkResolver(doc) {
       return "/";
     case "page":
       return `/${doc.uid}`;
-    case "fullbanner":
-      return `/home/fullbanner-slider-home`;
     default:
       return null;
   }

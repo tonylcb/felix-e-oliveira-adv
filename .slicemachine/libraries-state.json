@@ -202,6 +202,98 @@
           "extension": "js"
         },
         "screenshotPaths": {}
+      },
+      "quem_somos_home": {
+        "library": "slices",
+        "id": "quem_somos_home",
+        "name": "QuemSomosHome",
+        "description": "QuemSomosHome",
+        "model": {
+          "id": "quem_somos_home",
+          "type": "SharedSlice",
+          "name": "QuemSomosHome",
+          "description": "QuemSomosHome",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "QuemSomosHome",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Título",
+                    "placeholder": "",
+                    "allowTargetBlank": false,
+                    "single": "heading1"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Descrição",
+                    "placeholder": "",
+                    "allowTargetBlank": false,
+                    "multi": "paragraph"
+                  }
+                },
+                "image": {
+                  "config": {
+                    "label": "Image",
+                    "constraint": {
+                      "width": 700,
+                      "height": 700
+                    },
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "quem_somos_home",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Generate cutting-edge e-commerce",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Nisi adipisicing veniam dolore proident consectetur ea ullamco labore ea cupidatat qui consectetur fugiat. Quis aliqua sint irure. Minim cillum reprehenderit mollit.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 700,
+                  "height": 700
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=700&h=700&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {}
       }
     }
   }

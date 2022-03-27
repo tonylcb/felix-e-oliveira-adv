@@ -1,0 +1,47 @@
+{
+  "id": "quem_somos_home",
+  "type": "SharedSlice",
+  "name": "QuemSomosHome",
+  "description": "QuemSomosHome",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "QuemSomosHome",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Título",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading1"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Descrição",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "multi": "paragraph"
+          }
+        },
+        "image": {
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 700,
+              "height": 700
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

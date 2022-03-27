@@ -24,6 +24,19 @@
           }
         }
       }
+    },
+    "Quem somos": {
+      "slices2": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "quem_somos_home": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
     }
   }
 }
