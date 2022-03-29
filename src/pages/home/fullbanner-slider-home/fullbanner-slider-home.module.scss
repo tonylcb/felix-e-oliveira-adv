@@ -1,7 +1,7 @@
 @import "../../../styles/mixins.scss";
 .fullBannerSlider {
-  margin-bottom: 100px;
-
+  max-width: 1920px;
+  margin: 0 auto 100px;
   &Item {
     position: relative;
     max-width: 1920px;

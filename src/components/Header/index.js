@@ -15,7 +15,6 @@ export function Header() {
   const containerMenu = React.createRef();
   const hamburgerMenu = HamburgerMenu(menuMobile);
   const router = useRouter();
-
   function handlemenuMobile() {
     setMenuMobile(!menuMobile);
   }

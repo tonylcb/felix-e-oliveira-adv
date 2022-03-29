@@ -4,10 +4,7 @@ import SEO from "../components/SEO";
 import FullBannerSliderhome from "./home/fullbanner-slider-home";
 import About from "./home/quem-somos";
 import { createClient } from "../../prismicio";
-
 export default function Home({ page }) {
-  // console.log("data", page);
-
   return (
     <>
       <SEO title="Félix & Oliveira Advogados" excludeTitleSuffix />

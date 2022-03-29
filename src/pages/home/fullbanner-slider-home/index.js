@@ -51,16 +51,20 @@ export default function FullBannerSliderhome({ data }) {
                   className={styles.fullBannerSliderImgDesktop}
                   src={content.items[0].fullbannerdesktop.url}
                   alt={content.items[0].fullbannerdesktop.alt}
-                  width="1920"
-                  height="800"
+                  width={1920}
+                  height={800}
+                  layout="responsive"
+                  quality={100}
                 />
               ) : (
                 <Image
                   className={styles.fullBannerSliderImgMobile}
                   src={content.items[0].fullbannermobile.url}
                   alt={content.items[0].fullbannermobile.alt}
-                  width="575"
-                  height="500"
+                  width={575}
+                  height={500}
+                  layout="responsive"
+                  quality={100}
                 />
               )}
               <div className={styles.fullBannerSliderTextContainer}>

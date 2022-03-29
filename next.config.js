@@ -9,6 +9,7 @@ module.exports = {
     return config;
   },
   images: {
+    deviceSizes: [320, 420, 575, 768, 1024, 1200],
     domains: ["images.prismic.io"],
   },
 };
