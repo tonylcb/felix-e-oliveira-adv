@@ -1,21 +1,21 @@
 import React from "react";
 import useMediaQuery from "./useMediaQuery";
 
-const useAnimateOnScroll = (element) => {
+const useAnimateOnScroll = (element, divisor) => {
   const [isInViewPort, setIsInViewPort] = React.useState(false);
-  const isMobile = useMediaQuery("(max-width: 575px");
+  const isTablet = useMediaQuery("(max-width: 1024px");
 
   React.useEffect(() => {
-    isMobile &&
+    isTablet &&
       element.current.getBoundingClientRect().top <= window.innerHeight &&
       setIsInViewPort(true);
 
     const listener = () => {
       const elementHeight = () => {
-        if (!isMobile) {
-          return element.current.offsetHeight / 2;
+        if (!isTablet) {
+          return element.current.offsetHeight / divisor;
         } else {
-          return element.current.offsetHeight / 3;
+          return element.current.offsetHeight / divisor;
         }
       };
       if (
@@ -31,7 +31,7 @@ const useAnimateOnScroll = (element) => {
     return () => {
       window.removeEventListener("scroll", listener);
     };
-  }, [element, isInViewPort, isMobile]);
+  }, [element, divisor, isInViewPort, isTablet]);
   return isInViewPort;
 };
 

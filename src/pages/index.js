@@ -1,8 +1,8 @@
 import styles from "../styles/home.module.scss";
 import React from "react";
 import SEO from "../components/SEO";
-import FullBannerSliderhome from "./home/fullbanner-slider-home";
-import About from "./home/quem-somos";
+import FullBannerSliderhome from "../components/Home/fullbanner-slider-home";
+import About from "../components/Home/quem-somos";
 import { createClient } from "../../prismicio";
 export default function Home({ page }) {
   return (

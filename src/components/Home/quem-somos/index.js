@@ -2,18 +2,21 @@ import styles from "./about.module.scss";
 import React from "react";
 import Image from "next/image";
 import useAnimateOnScroll from "../../../hooks/useAnimateOnScroll";
+import GeneralButton from "../../GeneralButton";
+
 export default function About({ data }) {
   const content = data[0].primary;
 
   const textContainerRef = React.createRef();
-  const textContainerInViewPort = useAnimateOnScroll(textContainerRef);
+  const textContainerInViewPort = useAnimateOnScroll(textContainerRef, 3);
 
   const imageContainerRef = React.createRef();
-  const imageContainerInViewPort = useAnimateOnScroll(imageContainerRef);
+  const imageContainerInViewPort = useAnimateOnScroll(imageContainerRef, 3);
 
   return (
-    <section className={styles.container} ref={textContainerRef}>
+    <section className={styles.container}>
       <div
+        ref={textContainerRef}
         className={`${styles.textsContainer} ${
           !textContainerInViewPort ? "hide" : "appear"
         }`}
@@ -22,6 +25,11 @@ export default function About({ data }) {
         {content.description.map((item, i) => (
           <p key={i}>{item.text}</p>
         ))}
+        <div className={styles.buttonContainer}>
+          <GeneralButton href="/quem-somos" individualClass={styles.button}>
+            Nos conheça mais!
+          </GeneralButton>
+        </div>
       </div>
       <div
         ref={imageContainerRef}
@@ -30,8 +38,9 @@ export default function About({ data }) {
         } `}
       >
         <Image
-          width={700}
-          height={700}
+          className={styles.image}
+          width={900}
+          height={900}
           quality={100}
           src={content.image.url}
           alt={content.image.alt}
