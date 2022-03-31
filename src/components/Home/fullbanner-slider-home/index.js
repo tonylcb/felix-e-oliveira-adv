@@ -37,7 +37,7 @@ export default function FullBannerSliderhome({ data }) {
   const isMobile = useMediaQuery("(max-width: 575px)");
 
   return (
-    <section className={styles.fullBannerSlider}>
+    <section className={`${styles.fullBannerSlider} section`}>
       <Slider {...fullBannerSliderSettings}>
         {data &&
           data.map((content, i) => (

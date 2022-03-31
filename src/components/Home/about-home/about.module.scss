@@ -4,14 +4,11 @@
   @include wrapper;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
   gap: 50px;
 
   .textsContainer {
     width: 50%;
-    h1 {
-      margin-bottom: 50px;
-    }
+
     p {
       text-indent: 2rem;
       text-align: justify;
@@ -48,9 +45,7 @@
   .textsContainer {
     width: 100% !important;
     max-width: 700px;
-    h1 {
-      margin-bottom: 20px !important;
-    }
+
     p:not(:last-child) {
       margin-bottom: 10px;
     }

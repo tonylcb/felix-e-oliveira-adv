@@ -1,7 +1,8 @@
 @import "../../../styles/mixins.scss";
 .fullBannerSlider {
   max-width: 1920px;
-  margin: 0 auto 100px;
+  margin-left: auto;
+  margin-right: auto;
   &Item {
     position: relative;
     max-width: 1920px;
@@ -68,8 +69,6 @@
 
 @include tablet {
   .fullBannerSlider {
-    margin-bottom: 50px;
-
     &TextContainer {
       padding-bottom: 30px;
       padding-left: 1rem;

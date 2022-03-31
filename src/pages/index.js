@@ -2,7 +2,8 @@ import styles from "../styles/home.module.scss";
 import React from "react";
 import SEO from "../components/SEO";
 import FullBannerSliderhome from "../components/Home/fullbanner-slider-home";
-import About from "../components/Home/quem-somos";
+import About from "../components/Home/about-home";
+import Occupations from "../components/Home/occupations-home";
 import { createClient } from "../../prismicio";
 export default function Home({ page }) {
   return (
@@ -11,6 +12,7 @@ export default function Home({ page }) {
       <main className={styles.container}>
         <FullBannerSliderhome data={page.data.slices1} />
         <About data={page.data.slices2} />
+        <Occupations />
       </main>
     </>
   );

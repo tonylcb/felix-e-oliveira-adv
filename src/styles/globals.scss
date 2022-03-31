@@ -85,6 +85,60 @@ ul {
   }
 }
 
+.title {
+  margin-bottom: 50px;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 300px;
+    background: linear-gradient(
+      0deg,
+      rgba(252, 222, 241, 0) 0%,
+      var(--pink100) 70%,
+      var(--pink300) 100%
+    );
+    position: absolute;
+    left: -15px;
+    top: 50%;
+  }
+}
+
+.mainTitle {
+  padding-top: 50px;
+  margin-bottom: 100px;
+  position: relative;
+  text-align: center;
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    height: 4px;
+    background: linear-gradient(
+      90deg,
+      rgba(252, 222, 241, 0) 0%,
+      var(--pink100) 25%,
+      var(--pink300) 50%,
+      rgba(252, 222, 241, 0) 100%
+    );
+  }
+}
+
+main {
+  padding-top: 85px !important;
+  background: linear-gradient(0deg, var(--white) 15%, var(--gray200) 100%);
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
 .slick-arrow {
   z-index: 10;
   fill: var(--pink100);
@@ -109,6 +163,25 @@ ul {
   opacity: 1;
 }
 
+@include tablet {
+  .title {
+    margin-bottom: 20px !important;
+  }
+
+  .mainTitle {
+    margin-bottom: 65px;
+
+    // &::after {
+    //   margin-left: initial;
+    //   left: initial;
+    // }
+  }
+
+  .section {
+    margin-bottom: 65px;
+  }
+}
+
 @include mobile {
   .slick-next {
     right: 0px;
@@ -116,5 +189,13 @@ ul {
 
   .slick-prev {
     left: 0px;
+  }
+
+  .section {
+    margin-bottom: 50px;
+  }
+
+  .mainTitle {
+    margin-bottom: 50px;
   }
 }

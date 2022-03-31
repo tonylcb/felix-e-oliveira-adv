@@ -14,14 +14,14 @@ export default function About({ data }) {
   const imageContainerInViewPort = useAnimateOnScroll(imageContainerRef, 3);
 
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} section`}>
       <div
         ref={textContainerRef}
         className={`${styles.textsContainer} ${
           !textContainerInViewPort ? "hide" : "appear"
         }`}
       >
-        <h1>{content.title[0].text}</h1>
+        <h1 className="title">{content.title[0].text}</h1>
         {content.description.map((item, i) => (
           <p key={i}>{item.text}</p>
         ))}

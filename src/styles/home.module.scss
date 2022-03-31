@@ -1,10 +1,8 @@
 @import "../styles/mixins.scss";
 
 .container {
-  background: linear-gradient(0deg, var(--white) 70%, var(--gray100) 100%);
   // @include wrapper;
   // padding: 1rem;
-  padding-top: 85px;
 
   .fullBannerSlider {
     margin-bottom: 100px;
