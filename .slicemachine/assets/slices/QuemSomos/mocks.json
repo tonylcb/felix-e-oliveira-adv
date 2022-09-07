@@ -1,0 +1,33 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "quem_somos",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading2",
+          "text": "Whiteboard virtual channels",
+          "spans": []
+        }
+      ],
+      "text": [
+        {
+          "type": "paragraph",
+          "text": "Amet esse Lorem in occaecat. Ad quis cupidatat in in elit. Irure exercitation fugiat proident non in amet mollit consequat occaecat culpa qui.",
+          "spans": []
+        }
+      ],
+      "image": {
+        "dimensions": {
+          "width": 900,
+          "height": 900
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=900&fit=crop"
+      }
+    }
+  }
+]

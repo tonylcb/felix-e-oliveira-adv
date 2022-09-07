@@ -44,13 +44,13 @@ export default function FullBannerSliderhome({ data }) {
             <a
               key={i}
               className={styles.fullBannerSliderItem}
-              href={content.items[0].link.url ? content.items[0].link.url : "#"}
+              href={content.primary.link.url ? content.primary.link.url : "#"}
             >
               {!isMobile ? (
                 <Image
                   className={styles.fullBannerSliderImgDesktop}
-                  src={content.items[0].fullbannerdesktop.url}
-                  alt={content.items[0].fullbannerdesktop.alt}
+                  src={content.primary.fullbannerDesktop.url}
+                  alt={content.primary.fullbannerDesktop.alt}
                   width={1920}
                   height={800}
                   layout="responsive"
@@ -59,8 +59,8 @@ export default function FullBannerSliderhome({ data }) {
               ) : (
                 <Image
                   className={styles.fullBannerSliderImgMobile}
-                  src={content.items[0].fullbannermobile.url}
-                  alt={content.items[0].fullbannermobile.alt}
+                  src={content.primary.fullbannerMobile.url}
+                  alt={content.primary.fullbannerMobile.alt}
                   width={575}
                   height={500}
                   layout="responsive"
@@ -68,8 +68,8 @@ export default function FullBannerSliderhome({ data }) {
                 />
               )}
               <div className={styles.fullBannerSliderTextContainer}>
-                <h1>{content.items[0].title[0].text}</h1>
-                <p>{content.items[0].description[0].text}</p>
+                <h1>{content.primary.title[0].text}</h1>
+                <p>{content.primary.description[0].text}</p>
               </div>
             </a>
           ))}

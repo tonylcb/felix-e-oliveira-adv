@@ -9,6 +9,7 @@
 :root {
   // color
   --white: #fff;
+  --gray50: #fafcff;
   --gray100: #f4f6fc;
   --gray200: #dfe0e6;
   --gray300: #a8a8b3;
@@ -86,7 +87,7 @@ ul {
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   position: relative;
   &::before {
     content: "";
@@ -107,7 +108,7 @@ ul {
 
 .mainTitle {
   padding-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   position: relative;
   text-align: center;
   &::after {
@@ -132,7 +133,7 @@ ul {
 
 main {
   padding-top: 85px !important;
-  background: linear-gradient(0deg, var(--white) 15%, var(--gray200) 100%);
+  background: var(--gray50);
 }
 
 .section {
@@ -169,7 +170,7 @@ main {
   }
 
   .mainTitle {
-    margin-bottom: 65px;
+    margin-bottom: 40px;
 
     // &::after {
     //   margin-left: initial;
@@ -178,7 +179,7 @@ main {
   }
 
   .section {
-    margin-bottom: 65px;
+    margin-bottom: 30px;
   }
 }
 

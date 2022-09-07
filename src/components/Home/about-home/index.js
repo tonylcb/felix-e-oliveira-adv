@@ -26,7 +26,7 @@ export default function About({ data }) {
           <p key={i}>{item.text}</p>
         ))}
         <div className={styles.buttonContainer}>
-          <GeneralButton href="/quem-somos" individualClass={styles.button}>
+          <GeneralButton href="/quem-somos" className={styles.button}>
             Nos conheça mais!
           </GeneralButton>
         </div>

@@ -80,6 +80,7 @@
     transition: 0.2s;
     &:hover {
       transform: scale(1.03);
+      filter: brightness(1.03);
       box-shadow: 3px 3px 5px var(--gray100);
       color: var(--gray900);
       background-color: var(--pink300);

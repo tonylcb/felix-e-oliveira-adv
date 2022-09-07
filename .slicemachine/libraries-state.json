@@ -1,6 +1,104 @@
 {
   "slices": {
     "components": {
+      "area_de_atuacao": {
+        "library": "slices",
+        "id": "area_de_atuacao",
+        "name": "AreaDeAtuacao",
+        "description": "AreaDeAtuacao",
+        "model": {
+          "id": "area_de_atuacao",
+          "type": "SharedSlice",
+          "name": "AreaDeAtuacao",
+          "description": "AreaDeAtuacao",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "AreaDeAtuacao",
+              "primary": {
+                "occupationTitle": {
+                  "config": {
+                    "label": "Título",
+                    "placeholder": "",
+                    "allowTargetBlank": false,
+                    "single": "paragraph,preformatted,heading1,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "occupationDescription": {
+                  "config": {
+                    "label": "Descrição",
+                    "placeholder": "",
+                    "allowTargetBlank": false,
+                    "multi": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "occupationImage": {
+                  "config": {
+                    "label": "Imagem 900x900",
+                    "constraint": {
+                      "width": 900,
+                      "height": 900
+                    },
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "area_de_atuacao",
+            "items": [],
+            "primary": {
+              "occupationTitle": [
+                {
+                  "type": "paragraph",
+                  "text": "Enim aliqua cillum consectetur consequat. Et ut nisi quis culpa dolor magna commodo cillum.",
+                  "spans": []
+                }
+              ],
+              "occupationDescription": [
+                {
+                  "type": "heading1",
+                  "text": "Architect cross-platform channels",
+                  "spans": []
+                }
+              ],
+              "occupationImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 900
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=900&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "C:\\Users\\TonyAdmin\\Documents\\__dev\\_projetos-pessoais\\felix-e-oliveira-advogados\\felix-e-oliveira-advogados\\.slicemachine\\assets\\slices\\AreaDeAtuacao\\default\\preview.png",
+            "width": 800,
+            "height": 54
+          }
+        }
+      },
       "full_banner_home": {
         "library": "slices",
         "id": "full_banner_home",
@@ -18,12 +116,11 @@
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
               "description": "FullBannerHome",
-              "primary": {},
-              "items": {
+              "primary": {
                 "title": {
                   "config": {
                     "label": "Título",
-                    "placeholder": "Título do anúncio",
+                    "placeholder": "",
                     "allowTargetBlank": false,
                     "single": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   },
@@ -32,23 +129,23 @@
                 "description": {
                   "config": {
                     "label": "Descrição",
-                    "placeholder": "Descrição do anúncio",
+                    "placeholder": "",
                     "allowTargetBlank": false,
-                    "single": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                    "multi": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   },
                   "type": "StructuredText"
                 },
                 "link": {
                   "config": {
                     "label": "Link",
-                    "placeholder": "Link do anúncio",
+                    "placeholder": "",
                     "allowTargetBlank": false
                   },
                   "type": "Link"
                 },
-                "fullbannerdesktop": {
+                "fullbannerDesktop": {
                   "config": {
-                    "label": "Fullbanner Desktop",
+                    "label": "Fullbanner Desktop 1920x800",
                     "constraint": {
                       "width": 1920,
                       "height": 800
@@ -57,7 +154,7 @@
                   },
                   "type": "Image"
                 },
-                "fullbannermobile": {
+                "fullbannerMobile": {
                   "config": {
                     "label": "Fullbanner Mobile",
                     "constraint": {
@@ -68,7 +165,8 @@
                   },
                   "type": "Image"
                 }
-              }
+              },
+              "items": {}
             }
           ]
         },
@@ -77,123 +175,45 @@
             "variation": "default",
             "name": "Default",
             "slice_type": "full_banner_home",
-            "items": [
-              {
-                "title": [
-                  {
-                    "type": "paragraph",
-                    "text": "Sit eiusmod id eu.",
-                    "spans": []
-                  }
-                ],
-                "description": [
-                  {
-                    "type": "heading1",
-                    "text": "Strategize rich channels",
-                    "spans": []
-                  }
-                ],
-                "link": {
-                  "link_type": "Web",
-                  "url": "https://slicemachine.dev"
-                },
-                "fullbannerdesktop": {
-                  "dimensions": {
-                    "width": 1920,
-                    "height": 800
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=1920&h=800&fit=crop"
-                },
-                "fullbannermobile": {
-                  "dimensions": {
-                    "width": 575,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=575&h=500&fit=crop"
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Enim exercitation veniam id proident dolor irure nostrud incididunt laborum eu. Lorem officia do qui aliquip anim consectetur dolor enim laborum.",
+                  "spans": []
                 }
+              ],
+              "description": [
+                {
+                  "type": "heading1",
+                  "text": "Architect world-class vortals",
+                  "spans": []
+                }
+              ],
+              "link": {
+                "link_type": "Web",
+                "url": "https://slicemachine.dev"
               },
-              {
-                "title": [
-                  {
-                    "type": "paragraph",
-                    "text": "Nisi ullamco pariatur sit aliquip esse consectetur esse aliqua officia culpa amet anim consectetur mollit ullamco. Eiusmod cillum non commodo id fugiat dolor nostrud amet.",
-                    "spans": []
-                  }
-                ],
-                "description": [
-                  {
-                    "type": "heading1",
-                    "text": "Integrate impactful e-markets",
-                    "spans": []
-                  }
-                ],
-                "link": {
-                  "link_type": "Web",
-                  "url": "http://twitter.com"
+              "fullbannerDesktop": {
+                "dimensions": {
+                  "width": 1920,
+                  "height": 800
                 },
-                "fullbannerdesktop": {
-                  "dimensions": {
-                    "width": 1920,
-                    "height": 800
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=1920&h=800&fit=crop"
-                },
-                "fullbannermobile": {
-                  "dimensions": {
-                    "width": 575,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=575&h=500&fit=crop"
-                }
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=1920&h=800&fit=crop"
               },
-              {
-                "title": [
-                  {
-                    "type": "paragraph",
-                    "text": "Quis laboris veniam exercitation.",
-                    "spans": []
-                  }
-                ],
-                "description": [
-                  {
-                    "type": "heading1",
-                    "text": "Empower vertical paradigms",
-                    "spans": []
-                  }
-                ],
-                "link": {
-                  "link_type": "Web",
-                  "url": "https://slicemachine.dev"
+              "fullbannerMobile": {
+                "dimensions": {
+                  "width": 575,
+                  "height": 500
                 },
-                "fullbannerdesktop": {
-                  "dimensions": {
-                    "width": 1920,
-                    "height": 800
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=1920&h=800&fit=crop"
-                },
-                "fullbannermobile": {
-                  "dimensions": {
-                    "width": 575,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=575&h=500&fit=crop"
-                }
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=575&h=500&fit=crop"
               }
-            ],
-            "primary": {}
+            }
           }
         },
         "meta": {
@@ -202,6 +222,202 @@
           "extension": "js"
         },
         "screenshotPaths": {}
+      },
+      "integrante": {
+        "library": "slices",
+        "id": "integrante",
+        "name": "Integrante",
+        "description": "Integrante",
+        "model": {
+          "id": "integrante",
+          "type": "SharedSlice",
+          "name": "Integrante",
+          "description": "Integrante",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Integrante",
+              "primary": {
+                "memberTitle": {
+                  "config": {
+                    "label": "Título",
+                    "placeholder": "",
+                    "allowTargetBlank": false,
+                    "single": "paragraph,preformatted,heading1,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "memberDescription": {
+                  "config": {
+                    "label": "Descrição",
+                    "placeholder": "",
+                    "allowTargetBlank": false,
+                    "multi": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
+                },
+                "memberImage": {
+                  "config": {
+                    "label": "Imagem 900x900",
+                    "constraint": {
+                      "width": 900,
+                      "height": 900
+                    },
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "integrante",
+            "items": [],
+            "primary": {
+              "memberTitle": [
+                {
+                  "type": "paragraph",
+                  "text": "Ea labore ullamco eiusmod cupidatat aliqua eu sint nulla ad adipisicing. Elit pariatur proident occaecat eu cupidatat anim dolor deserunt. Amet ut aliquip reprehenderit quis minim aliqua duis qui consequat eiusmod.",
+                  "spans": []
+                }
+              ],
+              "memberDescription": [
+                {
+                  "type": "heading1",
+                  "text": "Extend holistic bandwidth",
+                  "spans": []
+                }
+              ],
+              "memberImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 900
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=900&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "C:\\Users\\TonyAdmin\\Documents\\__dev\\_projetos-pessoais\\felix-e-oliveira-advogados\\felix-e-oliveira-advogados\\.slicemachine\\assets\\slices\\Integrante\\default\\preview.png",
+            "width": 800,
+            "height": 54
+          }
+        }
+      },
+      "quem_somos": {
+        "library": "slices",
+        "id": "quem_somos",
+        "name": "QuemSomos",
+        "description": "QuemSomos",
+        "model": {
+          "id": "quem_somos",
+          "type": "SharedSlice",
+          "name": "QuemSomos",
+          "description": "QuemSomos",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "QuemSomos",
+              "primary": {
+                "title": {
+                  "config": {
+                    "label": "Título",
+                    "placeholder": "",
+                    "allowTargetBlank": false,
+                    "single": "heading2"
+                  },
+                  "type": "StructuredText"
+                },
+                "text": {
+                  "config": {
+                    "label": "Descrição",
+                    "placeholder": "",
+                    "allowTargetBlank": false,
+                    "multi": "paragraph"
+                  },
+                  "type": "StructuredText"
+                },
+                "image": {
+                  "config": {
+                    "label": "Imagem 900x900",
+                    "constraint": {
+                      "width": 900,
+                      "height": 900
+                    },
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "quem_somos",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Whiteboard virtual channels",
+                  "spans": []
+                }
+              ],
+              "text": [
+                {
+                  "type": "paragraph",
+                  "text": "Amet esse Lorem in occaecat. Ad quis cupidatat in in elit. Irure exercitation fugiat proident non in amet mollit consequat occaecat culpa qui.",
+                  "spans": []
+                }
+              ],
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 900
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=900&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "C:\\Users\\TonyAdmin\\Documents\\__dev\\_projetos-pessoais\\felix-e-oliveira-advogados\\felix-e-oliveira-advogados\\.slicemachine\\assets\\slices\\QuemSomos\\default\\preview.png",
+            "width": 800,
+            "height": 54
+          }
+        }
       },
       "quem_somos_home": {
         "library": "slices",

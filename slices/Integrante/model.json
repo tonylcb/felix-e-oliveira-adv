@@ -1,0 +1,47 @@
+{
+  "id": "integrante",
+  "type": "SharedSlice",
+  "name": "Integrante",
+  "description": "Integrante",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Integrante",
+      "primary": {
+        "memberTitle": {
+          "config": {
+            "label": "Título",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "paragraph,preformatted,heading1,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "memberDescription": {
+          "config": {
+            "label": "Descrição",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "multi": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "memberImage": {
+          "config": {
+            "label": "Imagem 900x900",
+            "constraint": {
+              "width": 900,
+              "height": 900
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

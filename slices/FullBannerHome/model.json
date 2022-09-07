@@ -10,12 +10,11 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "FullBannerHome",
-      "primary": {},
-      "items": {
+      "primary": {
         "title": {
           "config": {
             "label": "Título",
-            "placeholder": "Título do anúncio",
+            "placeholder": "",
             "allowTargetBlank": false,
             "single": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           },
@@ -24,23 +23,23 @@
         "description": {
           "config": {
             "label": "Descrição",
-            "placeholder": "Descrição do anúncio",
+            "placeholder": "",
             "allowTargetBlank": false,
-            "single": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "multi": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           },
           "type": "StructuredText"
         },
         "link": {
           "config": {
             "label": "Link",
-            "placeholder": "Link do anúncio",
+            "placeholder": "",
             "allowTargetBlank": false
           },
           "type": "Link"
         },
-        "fullbannerdesktop": {
+        "fullbannerDesktop": {
           "config": {
-            "label": "Fullbanner Desktop",
+            "label": "Fullbanner Desktop 1920x800",
             "constraint": {
               "width": 1920,
               "height": 800
@@ -49,7 +48,7 @@
           },
           "type": "Image"
         },
-        "fullbannermobile": {
+        "fullbannerMobile": {
           "config": {
             "label": "Fullbanner Mobile",
             "constraint": {
@@ -60,7 +59,8 @@
           },
           "type": "Image"
         }
-      }
+      },
+      "items": {}
     }
   ]
 }

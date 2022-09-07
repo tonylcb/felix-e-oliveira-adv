@@ -1,12 +1,32 @@
 {
   "_cts": {
-    "home": {}
+    "home": {},
+    "occupations": {},
+    "about": {
+      "mainTitle": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "teamMaintitle": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "occupationMaintitle": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   },
   "slices": {
     "FullBannerHome": {
       "default": {
-        "primary": {},
-        "items": {
+        "primary": {
           "title": {
             "config": {
               "patternType": "PARAGRAPH",
@@ -19,7 +39,8 @@
               "blocks": 1
             }
           }
-        }
+        },
+        "items": {}
       }
     },
     "QuemSomosHome": {
@@ -38,6 +59,63 @@
             }
           }
         }
+      }
+    },
+    "QuemSomos": {
+      "default": {
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {}
+      }
+    },
+    "AreaDeAtuacao": {
+      "default": {
+        "primary": {
+          "occupationTitle": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "occupationDescription": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {}
+      }
+    },
+    "Integrante": {
+      "default": {
+        "primary": {
+          "memberTitle": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "memberDescription": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {}
       }
     }
   }

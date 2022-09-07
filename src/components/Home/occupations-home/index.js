@@ -6,7 +6,15 @@ function OccupationsAreaHome() {
   return (
     <section className={styles.container}>
       <h1 className="title">Áreas de atuação</h1>
-      <GeneralButton href={"/quem-somos/areas-de-atuacao"}></GeneralButton>
+
+      <div className={styles.buttonContainer}>
+        <GeneralButton
+          href={"/quem-somos/areas-de-atuacao"}
+          className={styles.buttonCTA}
+        >
+          Saiba mais
+        </GeneralButton>
+      </div>
     </section>
   );
 }

@@ -3,122 +3,44 @@
     "variation": "default",
     "name": "Default",
     "slice_type": "full_banner_home",
-    "items": [
-      {
-        "title": [
-          {
-            "type": "paragraph",
-            "text": "Sit eiusmod id eu.",
-            "spans": []
-          }
-        ],
-        "description": [
-          {
-            "type": "heading1",
-            "text": "Strategize rich channels",
-            "spans": []
-          }
-        ],
-        "link": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        },
-        "fullbannerdesktop": {
-          "dimensions": {
-            "width": 1920,
-            "height": 800
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=1920&h=800&fit=crop"
-        },
-        "fullbannermobile": {
-          "dimensions": {
-            "width": 575,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=575&h=500&fit=crop"
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Enim exercitation veniam id proident dolor irure nostrud incididunt laborum eu. Lorem officia do qui aliquip anim consectetur dolor enim laborum.",
+          "spans": []
         }
+      ],
+      "description": [
+        {
+          "type": "heading1",
+          "text": "Architect world-class vortals",
+          "spans": []
+        }
+      ],
+      "link": {
+        "link_type": "Web",
+        "url": "https://slicemachine.dev"
       },
-      {
-        "title": [
-          {
-            "type": "paragraph",
-            "text": "Nisi ullamco pariatur sit aliquip esse consectetur esse aliqua officia culpa amet anim consectetur mollit ullamco. Eiusmod cillum non commodo id fugiat dolor nostrud amet.",
-            "spans": []
-          }
-        ],
-        "description": [
-          {
-            "type": "heading1",
-            "text": "Integrate impactful e-markets",
-            "spans": []
-          }
-        ],
-        "link": {
-          "link_type": "Web",
-          "url": "http://twitter.com"
+      "fullbannerDesktop": {
+        "dimensions": {
+          "width": 1920,
+          "height": 800
         },
-        "fullbannerdesktop": {
-          "dimensions": {
-            "width": 1920,
-            "height": 800
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=1920&h=800&fit=crop"
-        },
-        "fullbannermobile": {
-          "dimensions": {
-            "width": 575,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=575&h=500&fit=crop"
-        }
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=1920&h=800&fit=crop"
       },
-      {
-        "title": [
-          {
-            "type": "paragraph",
-            "text": "Quis laboris veniam exercitation.",
-            "spans": []
-          }
-        ],
-        "description": [
-          {
-            "type": "heading1",
-            "text": "Empower vertical paradigms",
-            "spans": []
-          }
-        ],
-        "link": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
+      "fullbannerMobile": {
+        "dimensions": {
+          "width": 575,
+          "height": 500
         },
-        "fullbannerdesktop": {
-          "dimensions": {
-            "width": 1920,
-            "height": 800
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=1920&h=800&fit=crop"
-        },
-        "fullbannermobile": {
-          "dimensions": {
-            "width": 575,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=575&h=500&fit=crop"
-        }
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=575&h=500&fit=crop"
       }
-    ],
-    "primary": {}
+    }
   }
 ]

@@ -1,0 +1,40 @@
+@import "../../styles/mixins.scss";
+
+.containerSection {
+  @include wrapper;
+  display: flex;
+  padding-bottom: 100px;
+  justify-content: space-between;
+  &TextRight {
+    flex-direction: row-reverse;
+  }
+  &Text {
+    width: 48%;
+
+    p {
+      text-indent: 2rem;
+      text-align: justify;
+    }
+    p:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &Image {
+    width: 48%;
+  }
+}
+
+@include tablet {
+  .containerSection {
+    flex-direction: column;
+    align-items: center;
+    &Text {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    &Image {
+      width: 100%;
+      margin-bottom: 100px;
+    }
+  }
+}
