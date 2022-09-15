@@ -5,7 +5,6 @@ import styles from "./about-section.module.scss";
 
 export default function AboutSection({ data }) {
   const dataContent = data.slices;
-  console.log("dataContent", dataContent);
   return (
     <>
       {dataContent.map((content, i) => (

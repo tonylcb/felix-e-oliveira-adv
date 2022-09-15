@@ -20,8 +20,7 @@ export default function QuemSomos({ page }) {
       />
 
       {routes.asPath === "/quem-somos" && <AboutSection data={dataContent} />}
-
-      {routes.asPath === "/quem-somos/equipe" && <TeamSection />}
+      {routes.asPath === "/quem-somos/equipe" && <TeamSection data={dataContent} />}
       {routes.asPath === "/quem-somos/areas-de-atuacao" && <OccupationsSection />}
     </main>
   );
