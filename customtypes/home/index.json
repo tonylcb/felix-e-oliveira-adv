@@ -4,7 +4,6 @@
   "repeatable": false,
   "status": true,
   "json": {
-    "Main": {},
     "FullBanner Slider": {
       "uid": {
         "config": {
@@ -26,12 +25,43 @@
       }
     },
     "Quem somos": {
+      "aboutMainTitleHome": {
+        "config": {
+          "label": "Título principal",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1,heading2,heading3,heading4,heading5,heading6"
+        },
+        "type": "StructuredText"
+      },
       "slices2": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
             "quem_somos_home": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Áreas de atuação": {
+      "occupationMainTitleHome": {
+        "config": {
+          "label": "Título principal",
+          "placeholder": "",
+          "allowTargetBlank": false,
+          "single": "heading1,heading2,heading3,heading4,heading5,heading6"
+        },
+        "type": "StructuredText"
+      },
+      "slices3": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "areas_de_atuacao_home": {
               "type": "SharedSlice"
             }
           }

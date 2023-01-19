@@ -1,5 +1,49 @@
 @import "../../../styles/mixins.scss";
 
 .container {
-  // @include wrapper;
+  @include wrapper;
+}
+.containerSection {
+  display: flex;
+  padding-bottom: 100px;
+  justify-content: space-between;
+  &TextRight {
+    flex-direction: row-reverse;
+  }
+  &Text {
+    width: 48%;
+  }
+  &Image {
+    width: 48%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.occupation {
+  &SubTitle {
+    margin-bottom: 10px;
+  }
+  &SubText {
+    margin-bottom: 30px;
+  }
+} 
+
+@include tablet {
+  .containerSection {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    &Text {
+      order: 2;
+      width: 100%;
+    }
+    &Image {
+      order: 1;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
 }

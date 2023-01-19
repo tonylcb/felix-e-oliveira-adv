@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
 import NavBarAboutSection from "../components/Quem-somos/NavbarAboutSection";
 import { createClient } from "../../prismicio";
@@ -21,7 +20,7 @@ export default function QuemSomos({ page }) {
 
       {routes.asPath === "/quem-somos" && <AboutSection data={dataContent} />}
       {routes.asPath === "/quem-somos/equipe" && <TeamSection data={dataContent} />}
-      {routes.asPath === "/quem-somos/areas-de-atuacao" && <OccupationsSection />}
+      {routes.asPath === "/quem-somos/areas-de-atuacao" && <OccupationsSection data={dataContent} />}
     </main>
   );
 }

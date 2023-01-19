@@ -15,7 +15,7 @@ export default function FullBannerSliderhome({ data }) {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 7000,
-    pauseOnHover: true,
+    pauseOnHover: false,
     pauseOnDotsHover: true,
     className: `${styles.fullBannerSliderContainer}`,
     dotsClass: `${styles.fullBannerSliderDots}`,

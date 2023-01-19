@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 import styles from "./about-section.module.scss";
 
 export default function AboutSection({ data }) {
@@ -10,7 +9,7 @@ export default function AboutSection({ data }) {
       {dataContent.map((content, i) => (
         <section key={i} className={`${i % 2 !== 0 && styles.containerSectionTextRight} ${styles.containerSection}`}>
           <div
-            className={`${i % 2 === 0 ? styles.containerSectionTextLeft : styles.containerSectionTextRight} ${styles.containerSectionText}`}
+            className={`${i % 2 === 0 ? styles.containerSectionTextLeft : styles.containerSectionTextRight} ${styles.containerSectionText} textContainer`}
           >
             <h2 className={"title"}>{content.primary.title[0].text}</h2>
             {content.primary.text.map((item, i) => (

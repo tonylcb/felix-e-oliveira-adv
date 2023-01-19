@@ -65,6 +65,7 @@ h1 {
 
 p {
   line-height: 25px;
+  font-weight: 400;
 }
 
 li {
@@ -94,15 +95,20 @@ ul {
     display: block;
     width: 4px;
     height: 300px;
-    background: linear-gradient(
-      0deg,
-      rgba(252, 222, 241, 0) 0%,
-      var(--pink100) 70%,
-      var(--pink300) 100%
-    );
+    background: linear-gradient(0deg, rgba(252, 222, 241, 0) 0%, var(--pink100) 70%, var(--pink300) 100%);
     position: absolute;
     left: -15px;
     top: 50%;
+  }
+}
+
+.textContainer {
+  p {
+    text-indent: 1rem;
+    text-align: justify;
+  }
+  p:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -121,13 +127,7 @@ ul {
     width: 100%;
     max-width: 1200px;
     height: 4px;
-    background: linear-gradient(
-      90deg,
-      rgba(252, 222, 241, 0) 0%,
-      var(--pink100) 25%,
-      var(--pink300) 50%,
-      rgba(252, 222, 241, 0) 100%
-    );
+    background: linear-gradient(90deg, rgba(252, 222, 241, 0) 0%, var(--pink100) 25%, var(--pink300) 50%, rgba(252, 222, 241, 0) 100%);
   }
 }
 
@@ -143,8 +143,8 @@ main {
 .slick-arrow {
   z-index: 10;
   fill: var(--pink100);
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .slick-next {
@@ -164,11 +164,27 @@ main {
   opacity: 1;
 }
 
+@include desktop-min {
+  .title {
+    &::before {
+      left: -10px;
+    }
+  }
+}
+
 @include tablet {
+  .title {
+    &::before {
+      left: -15px;
+    }
+  }
+  .slick-arrow {
+    width: 50px;
+    height: 50px;
+  }
   .title {
     margin-bottom: 20px !important;
   }
-
   .mainTitle {
     margin-bottom: 40px;
 
@@ -184,6 +200,15 @@ main {
 }
 
 @include mobile {
+  .title {
+    &::before {
+      left: -10px;
+    }
+  }
+  .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
   .slick-next {
     right: 0px;
   }

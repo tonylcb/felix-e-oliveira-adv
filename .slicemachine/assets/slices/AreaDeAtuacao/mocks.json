@@ -3,19 +3,61 @@
     "variation": "default",
     "name": "Default",
     "slice_type": "area_de_atuacao",
-    "items": [],
+    "items": [
+      {
+        "occupationSubTitle": [
+          {
+            "type": "heading1",
+            "text": "Empower transparent blockchains",
+            "spans": []
+          }
+        ],
+        "occupationText": [
+          {
+            "type": "paragraph",
+            "text": "Lorem ipsum irure proident enim magna mollit nulla do minim commodo ut reprehenderit ad.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "occupationSubTitle": [
+          {
+            "type": "heading1",
+            "text": "Integrate revolutionary infrastructures",
+            "spans": []
+          }
+        ],
+        "occupationText": [
+          {
+            "type": "paragraph",
+            "text": "Tempor nostrud nisi officia cillum cillum proident velit officia laborum culpa enim incididunt laboris sint. Aliquip commodo deserunt pariatur tempor.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "occupationSubTitle": [
+          {
+            "type": "heading1",
+            "text": "Utilize intuitive relationships",
+            "spans": []
+          }
+        ],
+        "occupationText": [
+          {
+            "type": "paragraph",
+            "text": "Consectetur dolor ad eu nostrud qui ea nostrud cupidatat duis.",
+            "spans": []
+          }
+        ]
+      }
+    ],
     "primary": {
       "occupationTitle": [
         {
-          "type": "paragraph",
-          "text": "Enim aliqua cillum consectetur consequat. Et ut nisi quis culpa dolor magna commodo cillum.",
-          "spans": []
-        }
-      ],
-      "occupationDescription": [
-        {
           "type": "heading1",
-          "text": "Architect cross-platform channels",
+          "text": "Mesh bleeding-edge bandwidth",
           "spans": []
         }
       ],
@@ -26,7 +68,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=900&fit=crop"
+        "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=900&fit=crop"
       }
     }
   }

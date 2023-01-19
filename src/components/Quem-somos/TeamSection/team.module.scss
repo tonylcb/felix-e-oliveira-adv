@@ -1,5 +1,18 @@
 @import "../../../styles/mixins.scss";
 
-.container {
-  // @include wrapper;
+.containerSection {
+  @include wrapper;
+  &Text {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto 60px;
+  }
+  &Image {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }

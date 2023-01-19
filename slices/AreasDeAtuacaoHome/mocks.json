@@ -1,0 +1,36 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "titleArea": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "Speech"
+            }
+          }
+        ]
+      },
+      "areaDescription": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Labore enim nisi Lorem labore aute sunt. Excepteur ullamco nulla ea magna excepteur adipisicing et incididunt amet consequat fugiat minim incididunt sunt enim. Minim labore labore elit nulla anim do elit nisi exercitation sit nisi fugiat proident."
+            }
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

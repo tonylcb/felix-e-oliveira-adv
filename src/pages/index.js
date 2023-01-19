@@ -11,8 +11,8 @@ export default function Home({ page }) {
       <SEO title="Félix & Oliveira Advogados" excludeTitleSuffix />
       <main className={styles.container}>
         <FullBannerSliderhome data={page.data.slices1} />
-        <About data={page.data.slices2} />
-        <Occupations />
+        <About data={page.data} />
+        <Occupations data={page.data} />
       </main>
     </>
   );

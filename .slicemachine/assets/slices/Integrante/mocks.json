@@ -8,25 +8,25 @@
       "memberTitle": [
         {
           "type": "paragraph",
-          "text": "Ea labore ullamco eiusmod cupidatat aliqua eu sint nulla ad adipisicing. Elit pariatur proident occaecat eu cupidatat anim dolor deserunt. Amet ut aliquip reprehenderit quis minim aliqua duis qui consequat eiusmod.",
+          "text": "In mollit cupidatat mollit. Ex et voluptate eiusmod minim deserunt officia in amet do tempor aliqua dolore culpa adipisicing Lorem. Cillum labore consectetur aliquip incididunt eiusmod amet aliqua commodo deserunt.",
           "spans": []
         }
       ],
       "memberDescription": [
         {
-          "type": "heading1",
-          "text": "Extend holistic bandwidth",
+          "type": "paragraph",
+          "text": "Aute dolor voluptate aliquip proident consequat culpa sint amet incididunt veniam cupidatat id laborum. Duis esse duis nisi eiusmod adipisicing tempor ipsum in in anim aute laboris.",
           "spans": []
         }
       ],
       "memberImage": {
         "dimensions": {
-          "width": 900,
-          "height": 900
+          "width": 1920,
+          "height": 800
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=900&fit=crop"
+        "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=1920&h=800&fit=crop"
       }
     }
   }

@@ -13,19 +13,10 @@
       "primary": {
         "occupationTitle": {
           "config": {
-            "label": "Título",
+            "label": "Área",
             "placeholder": "",
             "allowTargetBlank": false,
-            "single": "paragraph,preformatted,heading1,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-          },
-          "type": "StructuredText"
-        },
-        "occupationDescription": {
-          "config": {
-            "label": "Descrição",
-            "placeholder": "",
-            "allowTargetBlank": false,
-            "multi": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "single": "heading1,heading2,heading3,heading4,heading5,heading6"
           },
           "type": "StructuredText"
         },
@@ -41,7 +32,26 @@
           "type": "Image"
         }
       },
-      "items": {}
+      "items": {
+        "occupationSubTitle": {
+          "config": {
+            "label": "Sub-área",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading1,heading2,heading3,heading4,heading5,heading6"
+          },
+          "type": "StructuredText"
+        },
+        "occupationText": {
+          "config": {
+            "label": "Descrição sub-área",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "multi": "paragraph,strong,em"
+          },
+          "type": "StructuredText"
+        }
+      }
     }
   ]
 }

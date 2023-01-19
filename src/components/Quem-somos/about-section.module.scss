@@ -10,17 +10,13 @@
   }
   &Text {
     width: 48%;
-
-    p {
-      text-indent: 2rem;
-      text-align: justify;
-    }
-    p:not(:last-child) {
-      margin-bottom: 10px;
-    }
   }
   &Image {
     width: 48%;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 

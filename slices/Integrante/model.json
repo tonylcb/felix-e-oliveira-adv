@@ -25,16 +25,16 @@
             "label": "Descrição",
             "placeholder": "",
             "allowTargetBlank": false,
-            "multi": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "multi": "paragraph"
           },
           "type": "StructuredText"
         },
         "memberImage": {
           "config": {
-            "label": "Imagem 900x900",
+            "label": "Imagem 1920x800",
             "constraint": {
-              "width": 900,
-              "height": 900
+              "width": 1920,
+              "height": 800
             },
             "thumbnails": []
           },

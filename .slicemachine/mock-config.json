@@ -1,6 +1,19 @@
 {
   "_cts": {
-    "home": {},
+    "home": {
+      "occupationMainTitleHome": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "aboutMainTitleHome": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    },
     "occupations": {},
     "about": {
       "mainTitle": {
@@ -21,7 +34,9 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "articles": {},
+    "article": {}
   },
   "slices": {
     "FullBannerHome": {
@@ -85,18 +100,25 @@
         "primary": {
           "occupationTitle": {
             "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          },
-          "occupationDescription": {
-            "config": {
               "patternType": "HEADING",
               "blocks": 1
             }
           }
         },
-        "items": {}
+        "items": {
+          "occupationSubTitle": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "occupationText": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
       }
     },
     "Integrante": {
@@ -110,12 +132,36 @@
           },
           "memberDescription": {
             "config": {
-              "patternType": "HEADING",
+              "patternType": "PARAGRAPH",
               "blocks": 1
             }
           }
         },
         "items": {}
+      }
+    },
+    "AreasDeAtuacaoHome": {
+      "default": {
+        "primary": {
+          "titleArea": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "areaDescription": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Artigos": {},
+    "ArtigoConteudo": {
+      "default": {
+        "primary": {}
       }
     }
   }

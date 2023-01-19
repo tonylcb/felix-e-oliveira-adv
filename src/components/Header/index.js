@@ -10,23 +10,13 @@ import { useMenuMobile } from "../../context/context_menu-mobile";
 
 export function Header() {
   const isTablet = useMediaQuery("(max-width: 1024px)");
-
   const { menuMobile, setMenuMobile } = useMenuMobile();
-  const containerMenu = React.createRef();
+  const containerMenu = React.useRef();
+  const buttonMenu = React.useRef();
   const hamburgerMenu = HamburgerMenu(menuMobile);
   const router = useRouter();
   function handlemenuMobile() {
     setMenuMobile(!menuMobile);
-  }
-
-  function handleCloseOutsideMenu({ target }) {
-    if (
-      containerMenu.current &&
-      menuMobile &&
-      target === containerMenu.current
-    ) {
-      setMenuMobile(false);
-    }
   }
 
   React.useEffect(() => {
@@ -34,6 +24,20 @@ export function Header() {
       setMenuMobile(false);
     });
   }, [router]);
+
+  React.useEffect(() => {
+    if (isTablet) {
+      window.addEventListener('click', (event) => {
+
+        if (!buttonMenu.current.contains(event.target) &&
+          !containerMenu.current.contains(event.target) &&
+          event.target !== containerMenu.current &&
+          event.target !== buttonMenu.current) {
+          setMenuMobile(false);
+        }
+      })
+    }
+  }, [isTablet])
 
   return (
     <>
@@ -61,13 +65,13 @@ export function Header() {
             </div>
           ) : (
             <div
-              className={`${menuMobile && styles.menuMobileOpened} ${
-                styles.menuMobile
-              }`}
+              className={`${menuMobile && styles.menuMobileOpened} ${styles.menuMobile
+                }`}
             >
               <button
                 className={styles.menuMobile__buttonMenu}
                 onClick={handlemenuMobile}
+                ref={buttonMenu}
               >
                 <span className={styles.menuMobile__buttonMenu__text}>
                   Menu
@@ -80,11 +84,9 @@ export function Header() {
       </header>
       {isTablet ? (
         <div
-          className={`${menuMobile && styles.menuMobile__listOpened} ${
-            styles.menuMobile__container
-          }`}
+          className={`${menuMobile && styles.menuMobile__listOpened} ${styles.menuMobile__container
+            }`}
           ref={containerMenu}
-          onClick={handleCloseOutsideMenu}
         >
           <ul className={styles.menuMobile__list}>
             <MenuList />

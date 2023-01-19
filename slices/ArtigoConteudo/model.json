@@ -1,0 +1,48 @@
+{
+  "id": "artigo_conteudo",
+  "type": "SharedSlice",
+  "name": "ArtigoConteudo",
+  "description": "ArtigoConteudo",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ArtigoConteudo",
+      "primary": {
+        "articleTitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Título",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": false,
+            "single": "heading2"
+          }
+        },
+        "articleDescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Descrição",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "multi": "paragraph"
+          }
+        },
+        "articleImage": {
+          "type": "Image",
+          "config": {
+            "label": "Imagem 1920x800",
+            "constraint": {
+              "width": 1920,
+              "height": 800
+            },
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

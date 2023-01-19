@@ -1,0 +1,57 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "memberTitle": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Commodo ut pariatur in minim mollit nulla esse. Aliqua aute excepteur sunt laborum excepteur aute est qui nulla nostrud enim non. Ad consequat sunt quis magna sunt veniam in veniam aliqua ipsum laborum consequat ipsum cillum."
+            }
+          }
+        ]
+      },
+      "memberDescription": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Quis aliqua deserunt id sint non nostrud quis do occaecat adipisicing eu do sit duis. Reprehenderit amet culpa ad esse voluptate aliqua occaecat ut incididunt reprehenderit. Qui cupidatat nisi anim nostrud ad ullamco esse nulla do."
+            }
+          }
+        ]
+      },
+      "memberImage": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+          "width": 3882,
+          "height": 2584
+        },
+        "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?rect=0%2C483%2C3882%2C1618&w=1920&h=800",
+        "width": 1920,
+        "height": 800,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 483
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

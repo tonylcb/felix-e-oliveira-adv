@@ -1,6 +1,227 @@
 {
-  "id": "9beb1ae6-037d-4200-9afc-94d6981f84c1",
-  "uid": "earum-accusantium-sed",
-  "type": "home",
-  "data": {}
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "learn"
+  },
+  "slices1": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "full_banner_home$2f8b7d6b-4b9b-44ce-867a-bf50c5e6bc51",
+        "name": "full_banner_home",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Quis cillum ad non."
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Swung"
+                  }
+                }
+              ]
+            },
+            "link": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://twitter.com"
+              }
+            },
+            "fullbannerDesktop": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+                "width": 3882,
+                "height": 2584
+              },
+              "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?rect=0%2C483%2C3882%2C1618&w=1920&h=800",
+              "width": 1920,
+              "height": 800,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 483
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            },
+            "fullbannerMobile": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
+                "width": 2747,
+                "height": 4120
+              },
+              "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?rect=0%2C866%2C2747%2C2389&w=575&h=500",
+              "width": 575,
+              "height": 500,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 866
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "aboutMainTitleHome": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "heading1",
+        "content": {
+          "text": "Aloud"
+        }
+      }
+    ]
+  },
+  "slices2": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "quem_somos_home$7aea3850-8d77-4728-90af-06a83aee05f8",
+        "name": "quem_somos_home",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Chicken"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Voluptate eiusmod occaecat irure aliqua. Non occaecat laborum commodo. Fugiat veniam quis anim velit cillum magna culpa incididunt veniam."
+                  }
+                }
+              ]
+            },
+            "image": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+                "width": 4160,
+                "height": 3120
+              },
+              "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?rect=520%2C0%2C3120%2C3120&w=900&h=900",
+              "width": 900,
+              "height": 900,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 520,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "occupationMainTitleHome": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "heading1",
+        "content": {
+          "text": "Finest"
+        }
+      }
+    ]
+  },
+  "slices3": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "areas_de_atuacao_home$88df9979-e21d-4e4d-be33-8ad446b9fa06",
+        "name": "areas_de_atuacao_home",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "titleArea": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Swept"
+                  }
+                }
+              ]
+            },
+            "areaDescription": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Deserunt enim mollit laborum irure. Excepteur occaecat aliquip voluptate do aliquip. Commodo voluptate in adipisicing eu duis ipsum excepteur officia eiusmod enim."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      }
+    ]
+  }
 }

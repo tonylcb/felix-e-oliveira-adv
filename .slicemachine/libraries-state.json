@@ -21,19 +21,10 @@
               "primary": {
                 "occupationTitle": {
                   "config": {
-                    "label": "Título",
+                    "label": "Área",
                     "placeholder": "",
                     "allowTargetBlank": false,
-                    "single": "paragraph,preformatted,heading1,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-                  },
-                  "type": "StructuredText"
-                },
-                "occupationDescription": {
-                  "config": {
-                    "label": "Descrição",
-                    "placeholder": "",
-                    "allowTargetBlank": false,
-                    "multi": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                    "single": "heading1,heading2,heading3,heading4,heading5,heading6"
                   },
                   "type": "StructuredText"
                 },
@@ -49,7 +40,26 @@
                   "type": "Image"
                 }
               },
-              "items": {}
+              "items": {
+                "occupationSubTitle": {
+                  "config": {
+                    "label": "Sub-área",
+                    "placeholder": "",
+                    "allowTargetBlank": false,
+                    "single": "heading1,heading2,heading3,heading4,heading5,heading6"
+                  },
+                  "type": "StructuredText"
+                },
+                "occupationText": {
+                  "config": {
+                    "label": "Descrição sub-área",
+                    "placeholder": "",
+                    "allowTargetBlank": false,
+                    "multi": "paragraph,strong,em"
+                  },
+                  "type": "StructuredText"
+                }
+              }
             }
           ]
         },
@@ -58,19 +68,61 @@
             "variation": "default",
             "name": "Default",
             "slice_type": "area_de_atuacao",
-            "items": [],
+            "items": [
+              {
+                "occupationSubTitle": [
+                  {
+                    "type": "heading1",
+                    "text": "Empower transparent blockchains",
+                    "spans": []
+                  }
+                ],
+                "occupationText": [
+                  {
+                    "type": "paragraph",
+                    "text": "Lorem ipsum irure proident enim magna mollit nulla do minim commodo ut reprehenderit ad.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "occupationSubTitle": [
+                  {
+                    "type": "heading1",
+                    "text": "Integrate revolutionary infrastructures",
+                    "spans": []
+                  }
+                ],
+                "occupationText": [
+                  {
+                    "type": "paragraph",
+                    "text": "Tempor nostrud nisi officia cillum cillum proident velit officia laborum culpa enim incididunt laboris sint. Aliquip commodo deserunt pariatur tempor.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "occupationSubTitle": [
+                  {
+                    "type": "heading1",
+                    "text": "Utilize intuitive relationships",
+                    "spans": []
+                  }
+                ],
+                "occupationText": [
+                  {
+                    "type": "paragraph",
+                    "text": "Consectetur dolor ad eu nostrud qui ea nostrud cupidatat duis.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
             "primary": {
               "occupationTitle": [
                 {
-                  "type": "paragraph",
-                  "text": "Enim aliqua cillum consectetur consequat. Et ut nisi quis culpa dolor magna commodo cillum.",
-                  "spans": []
-                }
-              ],
-              "occupationDescription": [
-                {
                   "type": "heading1",
-                  "text": "Architect cross-platform channels",
+                  "text": "Mesh bleeding-edge bandwidth",
                   "spans": []
                 }
               ],
@@ -81,7 +133,7 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=900&fit=crop"
+                "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=900&fit=crop"
               }
             }
           }
@@ -94,6 +146,84 @@
         "screenshotPaths": {
           "default": {
             "path": "C:\\Users\\TonyAdmin\\Documents\\__dev\\_projetos-pessoais\\felix-e-oliveira-advogados\\felix-e-oliveira-advogados\\.slicemachine\\assets\\slices\\AreaDeAtuacao\\default\\preview.png",
+            "width": 800,
+            "height": 54
+          }
+        }
+      },
+      "areas_de_atuacao_home": {
+        "library": "slices",
+        "id": "areas_de_atuacao_home",
+        "name": "AreasDeAtuacaoHome",
+        "description": "AreasDeAtuacaoHome",
+        "model": {
+          "id": "areas_de_atuacao_home",
+          "type": "SharedSlice",
+          "name": "AreasDeAtuacaoHome",
+          "description": "AreasDeAtuacaoHome",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "AreasDeAtuacaoHome",
+              "primary": {
+                "titleArea": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Título da área",
+                    "placeholder": "",
+                    "allowTargetBlank": false,
+                    "single": "heading1,heading2,heading3,heading4,heading5,heading6"
+                  }
+                },
+                "areaDescription": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Descrição da área",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": false,
+                    "multi": "paragraph,strong,em"
+                  }
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "areas_de_atuacao_home",
+            "items": [],
+            "primary": {
+              "titleArea": [
+                {
+                  "type": "heading1",
+                  "text": "Syndicate e-business blockchains",
+                  "spans": []
+                }
+              ],
+              "areaDescription": [
+                {
+                  "type": "paragraph",
+                  "text": "Pariatur occaecat dolore et ad eu aliqua sunt enim laborum. Dolore exercitation occaecat fugiat. Sit minim commodo in reprehenderit Lorem.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "C:\\Users\\TonyAdmin\\Documents\\__dev\\_projetos-pessoais\\felix-e-oliveira-advogados\\felix-e-oliveira-advogados\\.slicemachine\\assets\\slices\\AreasDeAtuacaoHome\\default\\preview.png",
             "width": 800,
             "height": 54
           }
@@ -255,16 +385,16 @@
                     "label": "Descrição",
                     "placeholder": "",
                     "allowTargetBlank": false,
-                    "multi": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                    "multi": "paragraph"
                   },
                   "type": "StructuredText"
                 },
                 "memberImage": {
                   "config": {
-                    "label": "Imagem 900x900",
+                    "label": "Imagem 1920x800",
                     "constraint": {
-                      "width": 900,
-                      "height": 900
+                      "width": 1920,
+                      "height": 800
                     },
                     "thumbnails": []
                   },
@@ -285,25 +415,25 @@
               "memberTitle": [
                 {
                   "type": "paragraph",
-                  "text": "Ea labore ullamco eiusmod cupidatat aliqua eu sint nulla ad adipisicing. Elit pariatur proident occaecat eu cupidatat anim dolor deserunt. Amet ut aliquip reprehenderit quis minim aliqua duis qui consequat eiusmod.",
+                  "text": "In mollit cupidatat mollit. Ex et voluptate eiusmod minim deserunt officia in amet do tempor aliqua dolore culpa adipisicing Lorem. Cillum labore consectetur aliquip incididunt eiusmod amet aliqua commodo deserunt.",
                   "spans": []
                 }
               ],
               "memberDescription": [
                 {
-                  "type": "heading1",
-                  "text": "Extend holistic bandwidth",
+                  "type": "paragraph",
+                  "text": "Aute dolor voluptate aliquip proident consequat culpa sint amet incididunt veniam cupidatat id laborum. Duis esse duis nisi eiusmod adipisicing tempor ipsum in in anim aute laboris.",
                   "spans": []
                 }
               ],
               "memberImage": {
                 "dimensions": {
-                  "width": 900,
-                  "height": 900
+                  "width": 1920,
+                  "height": 800
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=900&fit=crop"
+                "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=1920&h=800&fit=crop"
               }
             }
           }

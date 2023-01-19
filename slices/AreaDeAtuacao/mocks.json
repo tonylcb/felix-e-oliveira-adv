@@ -1,0 +1,75 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "occupationTitle": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "Pleasant"
+            }
+          }
+        ]
+      },
+      "occupationImage": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+          "width": 3168,
+          "height": 4752
+        },
+        "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?rect=0%2C792%2C3168%2C3168&w=900&h=900",
+        "width": 900,
+        "height": 900,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 792
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "occupationSubTitle",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Coming"
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "occupationText",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Duis aute dolore sint eu incididunt anim reprehenderit. Minim do magna incididunt nostrud elit quis sunt nisi quis. Aliquip et in sit adipisicing excepteur aliqua."
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]
