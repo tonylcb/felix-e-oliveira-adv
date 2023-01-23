@@ -14,13 +14,6 @@
           "single": "heading1"
         }
       },
-      "uid": {
-        "type": "UID",
-        "config": {
-          "label": "Slug",
-          "placeholder": ""
-        }
-      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

@@ -10,3 +10,53 @@
   @include wrapper;
   padding: 40px 0;
 }
+
+.articlesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // flex-wrap: wrap;
+  @include desktop-min {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+  gap: 20px;
+}
+
+.articleContainer {
+  position: relative;
+  transition: 0.3s;
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 1024px) {
+    &:hover {
+      transform: scale(1.1);
+      z-index: 100;
+      & .articleDescriptionContainer {
+        p {
+          max-height: 250px;
+        }
+      }
+    }
+  }
+}
+
+.articleDescriptionContainer {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.4) 62%, rgba(244, 246, 252, 0) 100%);
+  h3 {
+    color: var(--white);
+  }
+  p {
+    color: var(--white);
+    transition: 0.4s;
+    max-height: 0px;
+    overflow: hidden;
+  }
+}
