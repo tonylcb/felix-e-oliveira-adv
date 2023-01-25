@@ -5,12 +5,11 @@ import Image from "next/image";
 import styles from "./team.module.scss";
 
 export default function TeamSection({ data }) {
-  const dataContent = data.slices1;
   return (
     <>
-      {dataContent.map((content, i) => (
+      {data.slices1.map((content, i) => (
         <section key={i} className={styles.containerSection}>
-            {content.primary.memberTitle[0].text !== "" &&
+          {content.primary.memberTitle[0].text !== "" &&
             <h2 className={"title"}>{content.primary.memberTitle[0].text}</h2>}
           <div className={styles.containerSectionImage}>
             <Image

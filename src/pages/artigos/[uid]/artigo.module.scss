@@ -1,0 +1,90 @@
+@import "../../../styles/mixins.scss";
+
+.container {
+    @include wrapper;
+    height: calc(100% - 120px);
+    padding-top: 100px;
+}
+  
+.content {
+    padding: 50px 0 100px;
+    @include mobile {
+        padding: 35px 0 100px;
+    }
+}
+
+.mainTitle {
+    text-align: center;
+    margin-bottom: 40px;
+    @include mobile {
+        margin-bottom: 30px;
+    }
+}
+
+.containerSectionText {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto 60px;
+}
+
+.subTitle {
+    position: relative;
+    max-width: 1000px;
+    margin: 20px auto 20px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 300px;
+        background: linear-gradient(0deg, rgba(252, 222, 241, 0) 0%, var(--pink100) 70%, var(--pink300) 100%);
+        position: absolute;
+        left: -15px;
+        top: 50%;
+        @include tablet {
+            left: -15px;
+        }
+        @include mobile {
+            left: -10px;
+        }
+    }
+}
+
+
+.articleContainer {
+    position: relative;
+    transition: 0.3s;
+  
+    @media (min-width: 1024px) {
+      &:hover {
+        z-index: 100;
+        & .articleDescriptionContainer {
+          h3 {
+            margin-bottom: 7px;
+          }
+          p {
+            max-height: 250px;
+          }
+        }
+      }
+    }
+  }
+  
+  .articleDescriptionContainer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.4) 62%, rgba(244, 246, 252, 0) 100%);
+    h3 {
+      transition: 0.3s;
+      transition-delay: 0.1s;
+      color: var(--white);
+    }
+    p {
+      color: var(--white);
+      transition: 0.3s;
+      transition-delay: 0.1s;
+      max-height: 0px;
+      overflow: hidden;
+    }
+  }

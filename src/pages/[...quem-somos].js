@@ -7,20 +7,18 @@ import OccupationsSection from "../components/Quem-somos/OccupationsSection";
 import AboutSection from "../components/Quem-somos";
 
 export default function QuemSomos({ page }) {
-  const dataContent = page.data;
-
   const routes = useRouter();
   return (
     <main className={styles.container}>
       <NavBarAboutSection
-        aboutMainTitle={dataContent.mainTitle[0].text}
-        occupationMainTitle={dataContent.occupationMaintitle[0].text}
-        teamMainTitle={dataContent.teamMaintitle[0].text}
+        aboutMainTitle={page.data.mainTitle[0].text}
+        occupationMainTitle={page.data.occupationMaintitle[0].text}
+        teamMainTitle={page.data.teamMaintitle[0].text}
       />
 
-      {routes.asPath === "/quem-somos" && <AboutSection data={dataContent} />}
-      {routes.asPath === "/quem-somos/equipe" && <TeamSection data={dataContent} />}
-      {routes.asPath === "/quem-somos/areas-de-atuacao" && <OccupationsSection data={dataContent} />}
+      {routes.asPath === "/quem-somos" && <AboutSection data={page.data} />}
+      {routes.asPath === "/quem-somos/equipe" && <TeamSection data={page.data} />}
+      {routes.asPath === "/quem-somos/areas-de-atuacao" && <OccupationsSection data={page.data} />}
     </main>
   );
 }

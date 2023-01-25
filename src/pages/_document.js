@@ -10,6 +10,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="stylesheet" type="text/css" href="nprogress.css" />
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"

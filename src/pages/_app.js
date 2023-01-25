@@ -10,7 +10,18 @@ import Link from "next/link";
 import { PrismicProvider } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";
 import { linkResolver, repositoryName } from "../../prismicio";
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
+import NProgress from "nprogress";
+
+Router.events.on("routeChangeStart", () => {
+  NProgress.start();
+})
+Router.events.on("routeChangeComplete", () => {
+  NProgress.done();
+})
+Router.events.on("routeChangeError", () => {
+  NProgress.done();
+})
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

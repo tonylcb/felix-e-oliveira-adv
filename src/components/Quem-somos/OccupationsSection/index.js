@@ -4,11 +4,9 @@ import styles from "./occupations.module.scss";
 
 
 export default function OccupationsSection({ data }) {
-  const dataContent = data.slices2;
-
   return (
     <>
-      {dataContent.map((content, i) => (
+      {data.slices2.map((content, i) => (
         <>
           <section key={i} className={styles.container}>
             <h1 className={`${styles.containerSectionTitle} title`}>{content.primary.occupationTitle[0].text}</h1>

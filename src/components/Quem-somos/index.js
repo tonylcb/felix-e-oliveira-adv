@@ -3,10 +3,9 @@ import React from "react";
 import styles from "./about-section.module.scss";
 
 export default function AboutSection({ data }) {
-  const dataContent = data.slices;
   return (
     <>
-      {dataContent.map((content, i) => (
+      {data.slices.map((content, i) => (
         <section key={i} className={`${i % 2 !== 0 && styles.containerSectionTextRight} ${styles.containerSection}`}>
           <div
             className={`${i % 2 === 0 ? styles.containerSectionTextLeft : styles.containerSectionTextRight} ${styles.containerSectionText} textContainer`}

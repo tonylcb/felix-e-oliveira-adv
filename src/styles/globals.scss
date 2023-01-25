@@ -64,7 +64,7 @@ h1 {
 }
 
 p {
-  line-height: 25px;
+  line-height: 28px;
   font-weight: 400;
 }
 
@@ -85,6 +85,11 @@ ul {
   .slick-active {
     background: var(--pink100) !important;
   }
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .title {
