@@ -53,11 +53,11 @@ export function Footer() {
               >
                 Área do cliente
               </li>
-              <li className={styles.footer__institutionalList}>
+              {/* <li className={styles.footer__institutionalList}>
                 <Link href="/midia" passHref>
                   Mídia
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 

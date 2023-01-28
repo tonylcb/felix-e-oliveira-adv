@@ -118,7 +118,7 @@ img {
 }
 
 .mainTitle {
-  padding-top: 50px;
+  padding-top: 40px;
   margin-bottom: 40px;
   position: relative;
   text-align: center;
@@ -168,6 +168,12 @@ main {
   transition: 2s;
   opacity: 1;
 }
+
+.slick-slide>div {
+  display: flex;
+  justify-content: center;
+  margin: 0 5px;
+} 
 
 @include desktop-min {
   .title {

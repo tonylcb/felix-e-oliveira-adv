@@ -6,9 +6,8 @@ function OccupationsAreaHome({ data }) {
   const content = data.slices3;
   const titleContent = data.occupationMainTitleHome[0].text;
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} section`}>
       <h1 className="title">{titleContent}</h1>
-
       <ul className={styles.areasListContainer}>
         {content.map((item, i) => (
           <>

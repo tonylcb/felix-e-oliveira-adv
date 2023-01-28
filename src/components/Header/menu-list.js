@@ -27,11 +27,11 @@ export function MenuList() {
       <li className={styles.menuItem} onClick={handleOpenLoginModal}>
         <a>Área do cliente</a>
       </li>
-      <li className={styles.menuItem}>
+      {/* <li className={styles.menuItem}>
         <Link href="/midia" passHref>
           Mídia
         </Link>
-      </li>
+      </li> */}
       <li className={styles.menuItem}>
         <Link href="/fale-conosco" passHref>
           Fale conosco

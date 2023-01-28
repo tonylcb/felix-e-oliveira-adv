@@ -1,16 +1,11 @@
 @import "../styles/mixins.scss";
 
 .container {
-  // @include wrapper;
-  // padding: 1rem;
-
+  margin-bottom: 100px;
   .fullBannerSlider {
     margin-bottom: 100px;
 
     &Item {
-      // width: 100vw !important;
-      position: relative;
-
       & div {
         position: absolute;
         bottom: 0px;
@@ -56,12 +51,15 @@
 
           button {
             opacity: 0;
-            // visibility: hidden;
           }
         }
       }
     }
   }
+}
+
+.articlesSliderContainer {
+  @include wrapper;
 }
 
 @include tablet {
