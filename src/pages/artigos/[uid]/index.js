@@ -5,9 +5,6 @@ import React from "react";
 import ArticlesSliderSection from "../../../components/Artigos/SliderSection";
 
 export default function ArticlePage({ page, articles }) {
-    React.useEffect(() => {
-        console.log('window.location.pathname :>> ', window.location.pathname);
-    }, [])
     return (
         <main className={styles.container}>
             <div className={styles.content}>

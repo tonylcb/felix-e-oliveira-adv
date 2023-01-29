@@ -9,15 +9,15 @@ function OccupationsAreaHome({ data }) {
     <section className={`${styles.container} section`}>
       <h1 className="title">{titleContent}</h1>
       <ul className={styles.areasListContainer}>
-        {content.map((item, i) => (
+        {content.map((item, index) => (
           <>
-            <li key={i} className={`${styles.areasListItem} textContainer`}>
+            <li key={index} className={`${styles.areasListItem} textContainer`}>
               <h2 className={styles.areasListItemTitle}>{item.primary.titleArea[0].text}</h2>
               {item.primary.areaDescription.map((description, i) => (
                 <p key={i}>{description.text}</p>
               ))}
             </li>
-            {i !== content.length - 1 && <div className={styles.areasListItemDivisor}></div>}
+            {index !== content.length - 1 && <div className={styles.areasListItemDivisor}></div>}
           </>
         ))}
       </ul>

@@ -11,7 +11,7 @@ import GeneralButton from "../../GeneralButton";
 export default function ArticlesSliderSection({ className, page, articles, isArticlePage = false }) {
 
     let articlesSliderGroup = []
-    articles.forEach((article) => {
+    articles?.forEach((article) => {
         if (articlesSliderGroup.length < 6) {
             if (isArticlePage) {
                 if (article.uid !== page.uid) {
