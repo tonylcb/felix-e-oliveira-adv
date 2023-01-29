@@ -11,14 +11,14 @@ export default function QuemSomos({ page }) {
   return (
     <main className={styles.container}>
       <NavBarAboutSection
-        aboutMainTitle={page.data.mainTitle[0].text}
-        occupationMainTitle={page.data.occupationMaintitle[0].text}
-        teamMainTitle={page.data.teamMaintitle[0].text}
+        aboutMainTitle={page?.data?.mainTitle[0].text}
+        occupationMainTitle={page?.data?.occupationMaintitle[0].text}
+        teamMainTitle={page?.data?.teamMaintitle[0].text}
       />
 
-      {routes.asPath === "/quem-somos" && <AboutSection data={page.data} />}
-      {routes.asPath === "/quem-somos/equipe" && <TeamSection data={page.data} />}
-      {routes.asPath === "/quem-somos/areas-de-atuacao" && <OccupationsSection data={page.data} />}
+      {routes.asPath === "/quem-somos" && <AboutSection data={page.data && page.data} />}
+      {routes.asPath === "/quem-somos/equipe" && <TeamSection data={page.data && page.data} />}
+      {routes.asPath === "/quem-somos/areas-de-atuacao" && <OccupationsSection data={page.data && page.data} />}
     </main>
   );
 }

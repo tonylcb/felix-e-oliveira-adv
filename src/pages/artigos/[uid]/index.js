@@ -11,8 +11,8 @@ export default function ArticlePage({ page, articles }) {
     return (
         <main className={styles.container}>
             <div className={styles.content}>
-                <h1 className={styles.mainTitle}>{page.data.maintitle[0].text}</h1>
-                {page.data.slices.map((content, i) => (
+                <h1 className={styles.mainTitle}>{page?.data?.maintitle[0].text}</h1>
+                {page?.data?.slices.map((content, i) => (
                     <section key={i} className={styles.containerSection}>
                         {content.primary.articleTitle[0].text !== "" &&
                             <h2 className={content.primary.articleImage.url ? "title" : styles.subTitle}>{content.primary.articleTitle[0].text}</h2>}
