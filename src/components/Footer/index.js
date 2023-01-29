@@ -3,6 +3,7 @@ import styles from "./footer.module.scss";
 import InstagramSvg from "../../../public/instagram1.svg";
 import FacebookSvg from "../../../public/facebook1.svg";
 import WhatsappSvg from "../../../public/whatsapp1.svg";
+import YoutubeSvg from "../../../public/youtube.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { useLoginModal } from "../../context/context_login-modal";
@@ -62,11 +63,13 @@ export function Footer() {
           </div>
 
           <div className={styles.footer__contact}>
-            <h3
-              className={`${styles.footer__contactTitle} ${styles.footer__titles}`}
-            >
-              Fale conosco
-            </h3>
+            <Link href="/fale-conosco" passHref>
+              <h3
+                className={`${styles.footer__contactTitle} ${styles.footer__titles}`}
+              >
+                Fale conosco
+              </h3>
+            </Link>
             <ul className={styles.footer__contactItems}>
               <li className={styles.footer__contactItem}>
                 <a
@@ -74,7 +77,7 @@ export function Footer() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  (81) 3333-3333
+                  (81) 3523-3058
                 </a>
               </li>
               <li className={styles.footer__contactItem}>
@@ -100,14 +103,21 @@ export function Footer() {
           </div>
 
           <div className={styles.footer__network}>
-            <Link href="/fale-conosco" passHref>
-              <h3
-                className={`${styles.footer__networkTitle} ${styles.footer__titles}`}
-              >
-                Nossas redes
-              </h3>
-            </Link>
+            <h3
+              className={`${styles.footer__networkTitle} ${styles.footer__titles}`}
+            >
+              Nossas redes
+            </h3>
             <ul className={styles.footer__networkLinks}>
+              <li>
+                <a
+                  href="https://web.whatsapp.com/send?phone=558135233058"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <WhatsappSvg />
+                </a>
+              </li>
               <li>
                 <a
                   href="https://www.instagram.com/felixoliveiraadvogados/"
@@ -119,20 +129,20 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  href="https://www.youtube.com/@felixoliveiraadvogadosasso7612"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <YoutubeSvg />
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://www.facebook.com/felixoliveiraadvogados"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <FacebookSvg />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://web.whatsapp.com/send?phone=558135233058"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <WhatsappSvg />
                 </a>
               </li>
             </ul>

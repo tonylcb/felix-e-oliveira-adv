@@ -12,6 +12,11 @@
     max-width: 700px;
     margin: 0 auto;
     margin-bottom: 50px;
+
+    @include mobile-min {
+      gap: 5px;
+    }
+
     &Tab {
       cursor: pointer;
       position: relative;

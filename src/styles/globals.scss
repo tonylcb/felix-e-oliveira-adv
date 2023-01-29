@@ -25,6 +25,8 @@
   --pink400: #fa73c2;
   --pink500: #a894a1;
 
+  --greenWhatsapp: #035d4b;
+
   // font-size
   --bigger: 2.5rem;
   --big: 2rem;
@@ -133,6 +135,9 @@ img {
     max-width: 1200px;
     height: 4px;
     background: linear-gradient(90deg, rgba(252, 222, 241, 0) 0%, var(--pink100) 25%, var(--pink300) 50%, rgba(252, 222, 241, 0) 100%);
+  }
+  @include mobile {
+   padding-top: 30px;
   }
 }
 

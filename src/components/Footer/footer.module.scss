@@ -40,18 +40,20 @@
 
         &LinkList {
           display: flex;
-          flex-direction: column;
+          // flex-direction: column;
+          justify-content: center;
           align-items: center;
           flex-wrap: wrap;
           max-height: 70px;
           width: 100%;
+          column-gap: 20px;
         }
 
         &List {
           cursor: pointer;
           transition: 0.3s;
           margin-bottom: 10px;
-          margin-right: 20px;
+          // margin-right: 20px;
 
           &:hover {
             opacity: 0.5;
@@ -69,6 +71,12 @@
 
         &Title {
           align-self: center;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            opacity: 0.5;
+            color: var(--gray700);
+          }
         }
 
         &Items {
@@ -94,15 +102,6 @@
         align-items: center;
         justify-content: flex-start;
         height: 100%;
-
-        &Title {
-          cursor: pointer;
-          transition: 0.3s;
-          &:hover {
-            opacity: 0.5;
-            color: var(--gray700);
-          }
-        }
         &Links {
           display: flex;
           flex-wrap: wrap;
