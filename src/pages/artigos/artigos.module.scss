@@ -1,16 +1,13 @@
 @import "../../styles/mixins.scss";
 
 .container {
-  @include wrapper;
   height: calc(100% - 120px);
   padding-top: 100px;
 }
 
 .content {
-  padding: 40px 0 100px;
-  @include mobile {
-    padding: 30px 0 70px;
-  }
+  @include wrapper;
+  @include mainWrapper;
 }
 
 .articlesContainer {

@@ -12,8 +12,8 @@
 }
 
 .content {
-  transition: 0.3s;
   @include wrapper;
+  transition: 0.3s;
   display: flex;
   justify-content: space-between;
   align-items: center;
