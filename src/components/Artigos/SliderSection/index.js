@@ -62,7 +62,7 @@ export default function ArticlesSliderSection({ className, page, articles, isArt
             <Slider {...articlesSliderSettings}>
                 {articles &&
                     articlesSliderGroup.map((content, i) => (
-                        <Link href={`/artigos/${content.uid}`} className={styles.articleContainer}>
+                        <Link key={i} href={`/artigos/${content.uid}`} className={styles.articleContainer}>
                             <Image
                                 src={content.data.slices[0].primary.articleImage.url}
                                 alt={content.data.slices[0].primary.articleImage.alt}
