@@ -154,7 +154,7 @@ export function Footer() {
           <p>Todos os direitos reservados.</p>
         </section>
       </footer>
-      <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=felix-e-oliveira-advogados"></script>
+      {/* <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=felix-e-oliveira-advogados"></script> */}
     </>
   );
 }
